@@ -1,0 +1,109 @@
+====================
+     2026-01-30    
+====================
+* frameworks/base
+686691e33 SystemUI: Add tile to show volume panel [stofstik]
+1c5cbf96d base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+
+* packages/apps/Settings
+c25effb Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+
+* packages/apps/Twelve
+0a30b67 Twelve: Don't suppress PROVIDED_RUNTIME_TOO_LOW [Luca Stefani]
+
+====================
+     2026-01-29    
+====================
+* hardware/lineage/interfaces
+e0bbf71 livedisplay: sdm: Update default PA on setDisplayMode [LuK1337]
+
+* packages/apps/ExactCalculator
+4053832 ExactCalculator: Clean up unused and redundant code [Inhishonor]
+
+====================
+     2026-01-28    
+====================
+* device/lineage/sepolicy
+8bd9ddd qcom: Allow postinstall to read xbl_config_[ab] [LuK1337]
+
+* packages/apps/SimpleSettingsConfig
+d63949d Allow "lineage" settings to be set [Nolen Johnson]
+
+* vendor/apn
+0762fe5 apn: Make it REUSE compatible [Michael Bestas]
+
+====================
+     2026-01-27    
+====================
+* hardware/qcom-caf/common
+28e41fa Introduce xbl_config_arb_check [LuK1337]
+
+* lineage/hudson
+cdb9b53 guess what TIME it is [pnguyen879]
+
+* lineage/mirror
+e9547ed Updated to 26-Jan-2026 23:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+e24fc7f fixup! devices: Promote timelm to 23.0 [pnguyen879]
+
+====================
+     2026-01-26    
+====================
+* frameworks/base
+ee998e079 Support volume up/down to mute [Aaron Kling]
+
+* hardware/qcom-caf/thermal
+181d4d6 thermal-hal: Update skin temperature values for kalama and crow [chandu078]
+
+* packages/apps/TvSettings
+01f7b09 TvSettings: Support two button mute [Aaron Kling]
+
+====================
+     2026-01-25    
+====================
+* device/qcom/sepolicy_vndr/legacy-um
+32aefa5 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8450
+ce9bc1d sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* device/qcom/sepolicy_vndr/sm8550
+155be93 sepolicy_vndr: Add SePolicy rules for new wfd AIDL service [Amit Agrawal]
+
+* hardware/lineage/compat
+f895522 compat: Provide libaudioutils shim [Bruno Martins]
+
+* hardware/qcom-caf/sm8550/audio/agm
+10316d1 agm: Fix format specifiers [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/audio/agm
+4ce90e2 agm: Fix format specifiers [Michael Bestas]
+
+* hardware/qcom-caf/sm8750/audio/pal
+7f00b35 plugins: customva_intf: Fix format specifiers [Cosmin Tanislav]
+
+* hardware/qcom-caf/sm8750/display/core
+2318000 Partial apply: "display-core: fix clang issues" [Rohit Kumar]
+
+* hardware/qcom-caf/sm8750/display/hal
+8f0658c gralloc: Fix format specifiers [Bruno Martins]
+
+* tools/extract-utils
+48bb722 extract_utils: use copy.deepcopy() for merging fixups [LuK1337]
+
+====================
+     2026-01-24    
+====================
+* android
+772706b manifest: Switch to our system/bpf fork [Michael Bestas]
+
+* lineage/scripts
+6a6c6da dev: rro: beautify: Allow ignoring specific overlay packages [Nolen Johnson]
+
+* packages/apps/Settings
+8eeb7a0 TopLevelSettings: Fix homepage icons hiding on tablets [Amrit Ranjan]
+
+* system/bpf
+6c5f4f8 bpfloader: Allow overriding kernel version [kyasu]
+

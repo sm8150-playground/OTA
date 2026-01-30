@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": 1769772117,
+      "filename": "lineage-23.2-20260130-UNOFFICIAL-cepheus.zip",
+      "id": "f4e78032bce4926895909e68529341ce6348334b62f8013785ba7ec435dc1410",
+      "romtype": "UNOFFICIAL",
+      "size": 1380023296,
+      "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-cepheus-f4e78032/lineage-23.2-20260130-UNOFFICIAL-cepheus.zip",
+      "version": "23.2"
+    }
+  ]
+}
