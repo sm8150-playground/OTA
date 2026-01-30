@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": 1769799583,
+      "filename": "lineage-23.2-20260130-UNOFFICIAL-raphael.zip",
+      "id": "a9c27864bd72f54488c4608aebfed2f2319e67b24c6aedd0202de331f8e9a82f",
+      "romtype": "UNOFFICIAL",
+      "size": 1395108787,
+      "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-raphael-a9c27864/lineage-23.2-20260130-UNOFFICIAL-raphael.zip",
+      "version": "23.2"
+    }
+  ]
+}
