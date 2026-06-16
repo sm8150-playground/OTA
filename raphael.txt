@@ -1,53 +1,367 @@
 ====================
-     2026-02-14    
+     2026-06-16    
+====================
+====================
+     2026-06-15    
 ====================
 * frameworks/base
-decab67d4 SystemUI: Add tile to show volume panel [stofstik]
-615617b44 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-b6dc5288e SystemUI: Fix long swipe on edge back gesture [Pranav Vashi]
+853c3d9c7b7d SystemUI: Add tile to show volume panel [stofstik]
+4f75dc5c0390 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+
+* lineage-sdk
+2ccab666 Partial Reapply "LineagePreferenceLib: Ensure the preference is available before replacing" [Nick Reuter]
 
 * lineage/wiki
-5bc7f31 Revert "wiki: Add `ab_copy_partitions` for vayu" [LuK1337]
-
-* packages/apps/Settings
-8426ef0 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-
-====================
-     2026-02-13    
-====================
-* packages/apps/Twelve
-a74bfae Twelve: Band aid for serialization of ProviderIdentifier [Sebastiano Barezzi]
-
-====================
-     2026-02-12    
-====================
-* lineage/hudson
-613c84d hudson: promote Samsung sm7125 and sm7325 series to 23.2 [Simon1511]
-
-====================
-     2026-02-11    
-====================
-* lineage/website
-60466b7 Changelog-31: Differentiate Updating and Upgrading [Nolen Johnson]
-
-* vendor/apn
-6d94773 apn: US: Add Tello [razorloves]
-
-====================
-     2026-02-10    
-====================
-====================
-     2026-02-09    
-====================
-* device/lineage/sepolicy
-9e7e81e libperfmgr: Grant access to IStats service for metrics [voidanix]
-
-====================
-     2026-02-08    
-====================
-* lineage/scripts
-c284b3c lineage-priv-template: Restore missing .certificate. interfixes [Tim Schumacher]
+1df87184 wiki: Fix my name and add a GitHub username mapping [Aelin Reidel]
 
 * packages/apps/DeskClock
-c482027 DeskClock: Show a setting icon instead of single item menu [Luca Stefani]
+fba06ffd2 DeskClock: Increase importance of all notifications [Michael Bestas]
+
+* packages/apps/LineageParts
+0abefcb LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
+
+* packages/apps/Settings
+0dfcfa1c48a Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+9ac46e66037 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+9a8809dc6a3 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+858826d19c2 Settings: Add a preference for LiveDisplay display profiles [Nick Reuter]
+
+====================
+     2026-06-14    
+====================
+* device/xiaomi/cepheus
+cc82f43 cepheus: Update NFC config [armdebug]
+f23abfd cepheus: Import NFC configs to device tree [armdebug]
+6fd89cd QDCM [armdebug]
+7b44900 cepheus: overlay: Enable fp screen off unlock feature [Vincent Wang]
+
+* device/xiaomi/raphael
+67ad2c2 NFC [armdebug]
+db5ad85 raphael: Import NFC configs to device tree [armdebug]
+
+* device/xiaomi/sm8150-common
+de8ebe9 NFC [armdebug]
+082deb2 sm8150-common: Limit max brightness for "green" & "blue" leds [armdebug]
+dded9d8 sm8150-common: Build UDFPS sensors sub-HAL [Ivan Vecera]
+6eccc53 sm8150-common: overlay: Convert config_screenBrightnessDoze to float [Edwin Moquete]
+baf5900 sm8150-common: Do not balance msm_drm and kgsl_3d0 IRQs [Jake Weinstein]
+52f4692 sm8150-common: msm_irqbalance: Correct the arch_mem_timer interrupt [Srinivas Ramana]
+9adf48c sm8150-common: Disable the property debug.sf.enable_gl_backpressure [quic_swarbu]
+86c8086 sm8150-common: Bump kernel BPF version override to 5.10.239 [basamaryan]
+f10bdf9 sm8150-common: Use the new auto network selection UI [Cassie]
+
+* external/chromium-webview/prebuilt/arm
+6773406 Update Chromium Webview arm to 149.0.7827.114 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+0a65409 Update Chromium Webview arm64 to 149.0.7827.114 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+78b3819 Update Chromium Webview x86 to 149.0.7827.114 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+64512a6 Update Chromium Webview x86_64 to 149.0.7827.114 [Kevin F. Haggerty]
+
+* external/v4l2_codec2
+319824d Add AV1 decode support [Aaron Kling]
+
+* kernel/xiaomi/sm8150
+5c73d76299b8 drivers: input: touchscreen: xiaomi: Fix FOD reporting when gestures are disabled [armdebug]
+632d4bf32e9a drivers: leds: Allow setting max brightness [Demon000]
+c68b399e22e4 fixup! thermal: core: Workaround for xiaomi thermal mitigation [armdebug]
+488b6c5cd6c6 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Disable goodix debug [armdebug]
+92233acffbce input: touchscreen: fts_521: Re-enable FOD status during suspend [armdebug]
+9ce67df173dc drivers: input: touchscreen: xiaomi: fts_521: Notify sysfs when finger is in FOD area [armdebug]
+bdc47bf08600 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Notify sysfs when finger is in FOD area [Ivan Vecera]
+2e878e44f73e drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Update aod_status [Ivan Vecera]
+2bb920709a46 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Do not handle impossible fod_status values [Ivan Vecera]
+6d69953a1430 drivers: input: touchscreen: Extend common touchpanel interface by fp_state [Ivan Vecera]
+55ec72e66674 thermal: core: Workaround for xiaomi thermal mitigation [Raphiel Rollerscaperers]
+88f4ffa2ada6 Merge remote-tracking branch 'qcom/lineage-20' into lineage-23.2 [armdebug]
+
+* lineage/mirror
+e3bd9d9 Updated lineage-minimal to 13-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+8e2a6c1e wiki: Minor corrections in glossary page [charcoalpt]
+
+* vendor/xiaomi/cepheus
+4b8e5ef cepheus: Import NFC configs to device tree [armdebug]
+
+* vendor/xiaomi/raphael
+69597cb raphael: Import NFC configs to device tree [armdebug]
+4eef0e7 raphael: Sync with device tree [armdebug]
+
+* vendor/xiaomi/sm8150-common
+04ce0c9 sm8150-common: Do not balance msm_drm and kgsl_3d0 IRQs [armdebug]
+
+====================
+     2026-06-13    
+====================
+* android
+02b3ba6 manifest: Track our fork of v4l2_codec2 [Aaron Kling]
+
+* external/chromium-webview/patches
+8085550 Update Chromium Webview to 149.0.7827.114 [Kevin F. Haggerty]
+
+* external/v4l2_codec2
+15e29bc Move checks for existing stream higher in startOutputQueue [Aaron Kling]
+dc53ab0 Discard EOS frames that aren't found in the queue [Aaron Kling]
+8671306 Raise the input buffer size for 1080p to 16MB [Aaron Kling]
+0834f3b Only declare components that are explicitly enabled [Aaron Kling]
+b6153a2 Add support for avc constrained high profile [Aaron Kling]
+9ea9103 Drop ifdefs blocking profile support [Aaron Kling]
+8507574 service: Remove multilib support [Konsta]
+7d3899a v4l2_codec2: Migrate HAL to AIDL [Mattijs Korpershoek]
+b54473d VideoFramePool: Add C2PlatformAllocatorStore::IGBA support [Mattijs Korpershoek]
+
+* lineage/mirror
+95fe03a Updated to 12-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+2f93642 build-webview: Update default webview to 149.0.7827.114 [Kevin F. Haggerty]
+
+====================
+     2026-06-12    
+====================
+* lineage/hudson
+47580fb Shift from old-aquatic to new-aquatic release candidate [Michael Bestas]
+e36b84a Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+8e883b1 Updated to 11-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+8dc02b86 wiki: mh2lm/Q25: Remove unwanted double space [LuK1337]
+74f7e76b wiki: Add SHIFTphone 8 [Michael Bestas]
+
+====================
+     2026-06-11    
+====================
+* device/lineage/sepolicy
+ebc3e00 common: Label ro.config.force_multi_window prop [Thomas Makin]
+
+* device/qcom/sepolicy_vndr/sm8550
+8f57f3c91 kalama: vendor: Simplify read_ahead_kb labeling [Nolen Johnson]
+
+* frameworks/base
+299aa25d5817 wm: don't disable rot hint on low_ram [Thomas Makin]
+
+* lineage/hudson
+18236e4 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+fab3b12 Updated aosp-minimal to 11-Jun-2026 10:02 UTC [Tim Schumacher]
+
+* vendor/apn
+c0a70ee US: Allow IPV4V6 for Google Fi (h2g2) [John-Michael Mulesa]
+087a17d US: Add Google Fi (h2g2) APN for the 310240 host [John-Michael Mulesa]
+
+====================
+     2026-06-10    
+====================
+* device/qcom/sepolicy_vndr/sm8550
+668af8021 kalama: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
+f86e763a9 kalama: vendor: Handle TEE luns [Nolen Johnson]
+
+* device/qcom/sepolicy_vndr/sm8750
+39d4b1bf3 sun: vendor: Label another variant of qupv3_2_geni_se wakeup node [Nolen Johnson]
+35766024b sun: vendor: Match SDHCI read_ahead_kb nodes are well [Nolen Johnson]
+a0dc8c7e6 sun: vendor: Handle TEE luns [Nolen Johnson]
+
+* lineage/hudson
+e91ea2c Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+67eab3dd devices: wade: I guess some Android 12 firmwares are locked [Nolen Johnson]
+cae76f87 wiki: deviceinfo: Display device.yml URL [LuK1337]
+
+* vendor/lineage
+01eef7f3 kernel: Ensure output modules.load file is present [Yumi Yukimura]
+
+====================
+     2026-06-09    
+====================
+* lineage/scripts
+555516d shipper: Add comment with used git hashes [LuK1337]
+
+* lineage/wiki
+330cecd6 wiki: Add wiki->gh mapping for pdx224 maintainer [LuK1337]
+
+* packages/apps/ExactCalculator
+af4a939 ExactCalculator: Auto scale button text size programatically [LuK1337]
+
+* vendor/qcom/opensource/commonsys/fm
+6f6d91c FM: Request POST_NOTIFICATIONS permission [Alexis Borovik]
+
+====================
+     2026-06-08    
+====================
+* device/lineage/sepolicy
+2e6e60f libperfmgr: Allow powerhal to access thermal service [armdebug]
+
+* frameworks/base
+20590ca55ca6 fixup! Implement click to take partial screenshot [1/3] [LuK1337]
+
+* lineage/hudson
+139ea8b Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/mirror
+394398d Updated lineage-minimal to 07-Jun-2026 22:01 UTC [Tim Schumacher]
+921fb96 Updated to 07-Jun-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/wiki
+8b213ad5 wiki: Add wiki->gh mapping for Q25 maintainer [LuK1337]
+4ccd1852 wiki: Add wiki->gh mapping for nio maintainer [LuK1337]
+b015df8f wiki: Add wiki->gh mapping for gauguin maintainer [LuK1337]
+11002099 fixup! wiki: makinbacon github username mapping [LuK1337]
+5ec8000b wiki: makinbacon github username mapping [Nolen Johnson]
+
+* packages/apps/SetupWizard
+46ff92a SetupWizard: Convert resource switch statements to if-else [Michael Bestas]
+
+====================
+     2026-06-07    
+====================
+* lineage/wiki
+0dc42653 wiki: Provide universal binary for macOS Heimdall [LuK1337]
+837e47c1 wiki: Document Gerrit gh oauth [LuK1337]
+
+* packages/apps/Aperture
+87b7443 Aperture: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Camelot
+03d0096 Camelot: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/DeskClock
+0256948e3 DeskClock: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Glimpse
+5f78ee9 Glimpse: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Jelly
+3d2c7aa Jelly: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Recorder
+8f15cb3 Recorder: Upload non-zipped artifact [LuK1337]
+
+* packages/apps/Twelve
+3961c5c Twelve: Upload non-zipped artifact [LuK1337]
+
+====================
+     2026-06-06    
+====================
+* lineage/mirror
+d7ec83b Updated aosp-minimal to 06-Jun-2026 10:02 UTC [Tim Schumacher]
+6554b05 Updated to 05-Jun-2026 22:01 UTC [Tim Schumacher]
+
+====================
+     2026-06-05    
+====================
+* frameworks/base
+ab7e823728b1 DO NOT MERGE: Enforce suspend restrictions in startOp and noteOp paths [Evan Severson]
+75d3a337f28d Enforce package name length limits in PackagePolicy setters. [Pavel Grafov]
+0425af96e568 Skip serialization of huge vibration effects in NotificationChannel [Matías Hernández]
+3893596933d7 Block adding toast windows to non-empty tokens. [Jeff DeCew]
+47ee871a2c26 Validate package ID range in LoadedArsc [Yurii Zubrytskyi]
+badeb01005fc Check caller for clearDeveloperVerificationExperiment [Song Chun Fan]
+b37bfa71978a Check caller for addDeveloperVerificationExperiment [Song Chun Fan]
+a5b07a84aa17 Compare period character as well during wildcard matching [Sanjana Sunil]
+1e1feb46c899 Map animation delegate to the transition instead of plumbing it [Evan Rosky]
+f5ad102f7d9d Prevent configAtEnd dispatching to finishing AR [Hongwei Wang]
+3e004709f768 Validate max proxy string length for proxySpec and exclusionList using PolicySizeVerifier. [Gabriel-Radu Ilca]
+3ab099d21f51 RESTRICT AUTOMERGE Require to be bound with non-pinned visible window [Achim Thesmann]
+de675fea004a Make sure we properly validate the XML attr size [Yurii Zubrytskyi]
+6db300a1b557 On face auth success, verify the face auth'd user is the current user [Beverly]
+a5b1a12c6c2c Add StorageManager.convert() check earlier in the stack so the command fails early instead of crashing system later. [Anagha Sasikumar]
+942bc27603ab Quick fix for WCLS security vulnerability. [Yutong Zhang]
+5de9a310dbdd Validate ResStringPool_header.styleCount [Mark Punzalan]
+1d7806bd1844 Don't allow hiding critical apps. [Pavel Grafov]
+e797c701057b Allow default per-thread and per-process OnHeaderDecodedListeners [Leah Rumancik]
+faca54c7ef74 Remove multi user flag reference [Reema Bajwa]
+771a6e02db61 Fix Tapjacking caused by touch slipping out of letterbox [Nan Wu]
+0b4a6fe65fa4 Checking userId in com.android.server.pm.ComputerEngine#resolveContentProvider [h00013079]
+9cdb6c222c92 Hide non system overlay window immediately if it is animating exit [Riddle Hsu]
+71bb580416d6 Apply visibility policy to window state surface [Riddle Hsu]
+5ba5fb4a4a07 Start a new transition to ignore split-enter from a malformed transition [Winson Chung]
+9815a601491a Fix bugs caused on package update events [Reema Bajwa]
+456e9d1c550a Catch uncaught IllegalStateException [Aaron Okano]
+
+* hardware/lineage/interfaces
+bd63dfb light: Optionally snap RGB to the nearest pure color [basamaryan]
+
+* lineage-sdk
+fc3781e8 LightsCapabilities: Add LIGHTS_NO_BRIGHTNESS_CONTROL [basamaryan]
+
+* packages/apps/DocumentsUI
+e04bcc52b Use signature-based trust for package name overrides [Himanshu Arora]
+
+* packages/apps/Launcher3
+20c30fd816 Introduce LauncherProcessImageListener for downscaling images in Launcher. [Adnan Begovic]
+
+* packages/apps/LineageParts
+b0a4974 Lights: Hide brightness controls when the device has none [basamaryan]
+
+* packages/modules/Bluetooth
+58cc83ed88 Avoid buffer overflow [Bhakthavatsala Raghavendra]
+af510af1d9 Handle LE Secure Connections Passkey Display/Notification [Brian Delwiche]
+12053d5b8f sdp: Validate buffer length in sdpu_build_attrib_seq [Archie Pusaka]
+2782874aef Remove flag reboke_permission_on_unbond [Kyunglyul Hyun]
+
+====================
+     2026-06-04    
+====================
+* frameworks/base
+fef79c4fc1f4 ColorDisplayService: initialize global saturation matrix before rebuild [krazey]
+
+* lineage/wiki
+ac8fe5a5 wiki: Update instructions for larry and oscaro [Vivekachooz]
+
+* packages/apps/Etar
+29025dd0 Etar: ./gradlew generateBp [LuK1337]
+aa98f381 Merge tag 'v1.0.56' of https://github.com/Etar-Group/Etar-Calendar into lineage-23.2 [LuK1337]
+2b8e1430 Translated using Weblate (German) [Gitsaibot]
+747c6055 Translated using Weblate (Romanian) [Igor Sorocean]
+f7e91a90 Translated using Weblate (Latvian) [Edgars Andersons]
+f3e80108 Translated using Weblate (Russian) [solokot]
+a3be564a Translated using Weblate (Chinese (Simplified Han script)) [大王叫我来巡山]
+25111d58 Translated using Weblate (Dutch) [Stephan Paternotte]
+0156ce42 Translated using Weblate (Czech) [Fjuro]
+90348e01 Translated using Weblate (Turkish) [Oğuz Ersen]
+c277c6b9 Translated using Weblate (Korean) [on9686]
+
+* packages/apps/Seedvault
+29301617 Merge tag '16-5.9' of https://github.com/seedvault-app/seedvault into lineage-23.2 [Michael Bestas]
+e3546035 Merge pull request #1019 from mikeNG/release-16-5.9 [Torsten Grote]
+7a6425b3 Release 16-5.9 [Michael Bestas]
+14aa4427 Merge pull request #1006 from grote/notification-icons [Michael Bestas]
+cbf2449d New notification icons [Torsten Grote]
+cd547823 Merge pull request #1017 from weblate/weblate-calyxos-seedvault [Torsten Grote]
+
+====================
+     2026-06-03    
+====================
+* frameworks/base
+1e3091ae449d core: allow low_ram devices to enable multiwindow [Thomas Makin]
+
+* lineage/wiki
+542a202f devices: garnet: Bump required firmware version [AdarshGrewal]
+
+* packages/apps/Seedvault
+12fb6b59 Import translations from Weblate [Hosted Weblate]
+0c4ccf6e Don't delete anything when SAF renaming fails [Torsten Grote]
+9562ace0 Merge pull request #1018 from grote/cirrus [Torsten Grote]
+d27a108b Remove Cirrus CI as it no longer works :( [Torsten Grote]
+6eb889e4 Merge pull request #1016 from grote/backend-improv [Torsten Grote]
+
+* packages/apps/Settings
+6074ecb80f7 Update enable ANGLE warning message [Yuxin Hu]
+100e0f0feb4 Fix app label injection in ForgetDeviceDialogFragment [Evan Chen]
+7ff5c18a384 Fix vulnerability in RequestManageCredentials [Iustin Ventaniuc]
+df99e84a212 Add null check to caller permission check in DisableSupervisionActivity. [Yvonne Jiang]
+4d4a0946e08 Fix default payment app selection [James Eidson]
+41f1f3414d7 Import translations. DO NOT MERGE ANYWHERE [Bill Yi]
+ad31f7c5e8e Add a warning asking user to backup device data [Yuxin Hu]
+e6a815b05b8 nfc: Do not let guest user disable secure nfc [George Chang]
+679416a440b Allow multi-user to control secure nfc [Kyle Hsiao]
 
