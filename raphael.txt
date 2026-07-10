@@ -1,21 +1,399 @@
 ====================
-     2026-06-28    
+     2026-07-10    
 ====================
+* device/xiaomi/sm8150-common
+718875e6 NFC [armdebug]
+8068ad20 sm8150-common: Limit max brightness for green & blue leds [armdebug]
+e69b4c10 sm8150-common: Build UDFPS sensors sub-HAL [Ivan Vecera]
+5b4cfd03 sm8150-common: Compile the kernel without GCC [Michael Bestas]
+98cb2b2b sm8150-common: Set FCM level to 7 [Nolen Johnson]
+995a62a4 sm8150-common: powerhint: Convert adaptive CPU throtlle hints to static hints [armdebug]
+6b645e4b sm8150-common: powerhint: Revert "Don't mess with UFS clkgate" [armdebug]
+c150067f sm8150-common: Enable display idle_state mechanism [Midas Chien]
+118cce55 sm8150-common: rootdir:  Clean up init_qcom_post_boot script [armdebug]
+39c90522 sm8150-common: Increase the console log level [Ashish Bhimanpalliwar]
+d92ba9ed sm8150-common: init.qcom.rc: remove unused propery [Sean Tranchetti]
+85afb393 sm8150-common: Decrease the console log level [Raghavendra Rao Ananta]
+0c0eaf11 sm8150-common: Clean up the no longer used logdump service code. [P.Adarsh Reddy]
+630f0fd6 sm8150-common: init.qcom.rc: Removed deprecated drmdiag entry [Murthy Nidadavolu]
+98e17dff sm8150-common: init.qcom.rc: Remove unused property [Ayishwarya Narasimhan]
+ab618a2a sm8150-common: init.qcom.rc: Tuning UFS clock scaling during boot time [Gopal Iyer]
+5bf13a0f sm8150-common: init.qcom.rc: remove unused hvdcp/charger service and properties [Subbaraman Narayanamurthy]
+fa5c7e1c sm8150-common: init.qcom.rc: Removing unused setprop persist.camera.gyro.disable [Amit Kushwaha]
+
 * frameworks/base
-98102c08155c SystemUI: Add tile to show volume panel [stofstik]
-add5163c0215 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-
-* hardware/interfaces
-40c184d189 compatibility_matrices: Allow gnss AIDL v1 on target-level 7 [Cyber Knight]
-
-* hardware/nxp/nfc
-feb4aea snxxx: halimpl: skip autonomous mode writes if feature is disabled [armdebug]
-
-* hardware/qcom-caf/thermal-legacy-um
-b9e7eb6 thermal-hal: Update skin sensor name for xiaomi [armdebug]
+ec8d2728c49a SystemUI: Add tile to show volume panel [stofstik]
+876492a3c30f base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
 
 * kernel/xiaomi/sm8150
-f4291544cfdf Merge remote-tracking branch 'qcom/lineage-20' into HEAD [armdebug]
+d3aa553f78e4 arm64: configs: xiaomi: Remove duplicate configs [armdebug]
+233be650e78f drivers: input: touchscreen: xiaomi: Fix FOD reporting when gestures are disabled [armdebug]
+fa700628ffda drivers: leds: Allow setting max brightness [Demon000]
+eda80bfc11f5 fixup! thermal: core: Workaround for xiaomi thermal mitigation [armdebug]
+64ba53aeb921 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Disable goodix debug [armdebug]
+6cf50d9a8711 input: touchscreen: fts_521: Re-enable FOD status during suspend [armdebug]
+770e0afda539 drivers: input: touchscreen: xiaomi: fts_521: Notify sysfs when finger is in FOD area [armdebug]
+684404b5e136 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Notify sysfs when finger is in FOD area [Ivan Vecera]
+d9d6e4c9a042 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Update aod_status [Ivan Vecera]
+6342ad883ffd drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Do not handle impossible fod_status values [Ivan Vecera]
+bf7cffe97787 drivers: input: touchscreen: Extend common touchpanel interface by fp_state [Ivan Vecera]
+de95c40b2cee thermal: core: Workaround for xiaomi thermal mitigation [Raphiel Rollerscaperers]
+41256bd274e6 Merge remote-tracking branch 'qcom/lineage-20' into lineage-23.2 [armdebug]
+
+* lineage/scripts
+594cd33 pixel: Also update system build fingerprint [Michael Bestas]
+
+* lineage/wiki
+23ee8012 wiki: bugreporting: English please [Michael W]
+
+* packages/apps/Settings
+6dae0eb8015 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+a88bce60e1a Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+efcdf76d960 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+
+* packages/apps/Updater
+0d94f6f Updater: Update bug report url to wiki [Michael W]
+
+====================
+     2026-07-09    
+====================
+* lineage/scripts
+c5075d1 pixel: Create directory before downloading [Michael Bestas]
+
+* lineage/website
+cae5e9e www: Add amlogic burn mode to web flash-tools mention [Nicholas Lim]
+
+* lineage/wiki
+497d3e96 wiki: Update keys list for 17 [LuK1337]
+
+====================
+     2026-07-08    
+====================
+* lineage/website
+178a956 www: Hotfix 2026-07-07 [Nolen Johnson]
+997b214 www: Add July 2026 update post [Inhishonor]
+
+* lineage/wiki
+bb9ea48f wiki: Update copy-partitions install steps [razorloves]
+
+* vendor/lineage
+7f67df02 lineage: Introduce a simple program for disabling adb remount overlays [LuK1337]
+8e41931d release: Bump Security String to 2026-07-01 [Nolen Johnson]
+
+====================
+     2026-07-07    
+====================
+====================
+     2026-07-06    
+====================
+* lineage/hudson
+b6fd1be freebox right after freedom day [Nolen Johnson]
+
+* lineage/wiki
+3a977252 devices: Import the Freebox Pop / TV | 22 [Nolen Johnson]
+e4658db0 wiki: Update avatrn and bronco firmware requirements [Nick Reuter]
+
+====================
+     2026-07-05    
+====================
+* android
+5c3bbcb Revert "manifest: Track custom prebuilts/misc revision" [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
+6a4234135 effects: Link against latest android.media.audio.common.types [Bruno Martins]
+320014e80 effects: Include missing libaudioutils_headers dependency [Bruno Martins]
+30010d124 effects: Fix sign comparison errors [Bruno Martins]
+
+* lineage/mirror
+2330004 Updated lineage-minimal to 04-Jul-2026 22:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+acd1868 lineage-priv-template: Add com.android.npumanager [LuK1337]
+
+* lineage/wiki
+63b52758 wiki: Add reboot suggestion to recovery_install_fastboot_sony [LuK1337]
+71b1233e devices: Update tundra maintainers [Nolen Johnson]
+
+* vendor/lineage
+6e3765ec config: Export TARGET_MAX_PAGE_SIZE_SUPPORTED to soong [LuK1337]
+1db95992 config: Exclude prebuilts/misc/protobuf_vendorcompat [LuK1337]
+
+====================
+     2026-07-04    
+====================
+* android
+335a78f manifest: Track libvmmem [Michael Bestas]
+
+* frameworks/base
+46fd4b1f8d25 PhoneWindowManager: Fix assist key wakeup [Michael Bestas]
+
+* hardware/lineage/compat
+9e8811a compat: Provide our own libprotobuf 3.9.1 / 21.12 prebuilts [LuK1337]
+
+* hardware/qcom-caf/sm8450-6.6/display/hal
+618af11056 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
+7f49d76991 Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
+
+* hardware/qcom-caf/sm8550/display
+d679d895cd Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
+7ea46e207c Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
+
+* hardware/qcom-caf/sm8650/display
+7f95c24161 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
+473c2b73e8 Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
+
+* kernel/xiaomi/sm8150
+d0e8ec39ab80 arm64: configs: vendor: Enable percpu high priority kthreads for erofs [Sandeep Dhavale]
+c4d3b3ec180e arm64: configs: vendor: enable CONFIG_EROFS_FS=y [Greg Kroah-Hartman]
+b08a5f5eb771 ANDROID: defconfig: Re-enable CONFIG_CRYPTO_SHA1 [Eric Biggers]
+34d83e000531 ANDROID: defconfig: switch to MODULE_SIG_SHA256 [Carlos Llamas]
+9df756bfccfb UPSTREAM: sign-file: Use only the OpenSSL CMS API for signing [Petr Pavlu]
+bd7158ef4f3f BACKPORT: module: Remove SHA-1 support for module signing [Petr Pavlu]
+e43dfd7f0e98 BACKPORT: module: Do not offer sha224 for built-in module signing [Dimitri John Ledkov]
+9dc96d9e6165 ANDROID: sign-file: Fix warning when OPENSSL_NO_ENGINE is set [Lee Jones]
+51023832d07f FROMLIST: sign-file: Use OpenSSL provided define to compile out deprecated APIs [Lee Jones]
+bfc7ea0f6657 ANDROID: extract-cert: omit PKCS#11 support if building against BoringSSL [Matthias Maennich]
+27bbbba36718 scripts/Kbuild: Use shell for getting ld-name again [Tim Zimmermann]
+b84d11b3a824 kconfig: fix warnings on format [Denis OSTERLAND]
+ef2c4f5bbc63 BACKPORT: scripts/Makefile.clang: default to LLVM_IAS=1 [Nick Desaulniers]
+dcf8a6327621 BACKPORT: Makefile: infer --target from ARCH for CC=clang [Nick Desaulniers]
+d813f35527c9 UPSTREAM: Makefile: Only specify '--prefix=' when building with clang + GNU as [Nathan Chancellor]
+7e94c1dfc885 UPSTREAM: Makefile: Remove '--gcc-toolchain' flag [Nathan Chancellor]
+628255e841b1 Revert "ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple" [Nick Desaulniers]
+5a9e63537ed9 arm64: configs: vendor: reduce KFENCE pool size [Alexander Potapenko]
+f7c809223b67 arm64: configs: vendor: Enable KFENCE by setting the sample interval to 500ms [Alexander Potapenko]
+39d28a9e6c6e arm64: configs: vendor: Enable KFENCE [Alistair Delva]
+c769ccf9b2fc UPSTREAM: random: split initialization into early step and later step [Jason A. Donenfeld]
+cbf4cdf28d15 UPSTREAM: kfence: avoid passing -g for test [Marco Elver]
+995b11a813e3 UPSTREAM: kfence: fix memory leak when cat kfence objects [Baokun Li]
+233e28c7b91e UPSTREAM: kfence: unconditionally use unbound work queue [Marco Elver]
+37446b928c7a UPSTREAM: kfence: use TASK_IDLE when awaiting allocation [Marco Elver]
+aa6dfbe4df7b FROMLIST: kfence: skip all GFP_ZONEMASK allocations [Alexander Potapenko]
+445f52c97e6f FROMLIST: kfence: move the size check to the beginning of __kfence_alloc() [Alexander Potapenko]
+1aefb854f61e ANDROID: kfence: clean up unused variables [Carlos Llamas]
+d3ba5408ad92 FROMGIT: kfence: use power-efficient work queue to run delayed work [Marco Elver]
+21c7a6027fa5 FROMGIT: kfence: maximize allocation wait timeout duration [Marco Elver]
+6c31c59d23b7 FROMGIT: kfence: await for allocation using wait_event [Marco Elver]
+2509cfc3daee FROMGIT: kfence: zero guard page after out-of-bounds access [Marco Elver]
+af4b8f760062 UPSTREAM: kfence: make compatible with kmemleak [Marco Elver]
+89a215fe6a2a UPSTREAM: kfence: fix reports if constant function prefixes exist [Marco Elver]
+01d864ce333b UPSTREAM: kfence: fix printk format for ptrdiff_t [Marco Elver]
+2606ad848de5 UPSTREAM: kfence: report sensitive information based on no_hash_pointers [Marco Elver]
+f2556f39d882 UPSTREAM: lib/vsprintf: no_hash_pointers prints all addresses as unhashed [Timur Tabi]
+bdbd4072c0f3 UPSTREAM: lib: use KSTM_MODULE_GLOBALS macro in kselftest drivers [Timur Tabi]
+bd30fcf75c33 BACKPORT: kasan: use error_report_end tracepoint [Alexander Potapenko]
+bf69e812ff0f FROMGIT: kfence: use error_report_end tracepoint [Alexander Potapenko]
+d08d57ad75fb FROMGIT: tracing: add error_report_end trace point [Alexander Potapenko]
+17f1ae245690 FROMGIT: kfence: show access type in report [Marco Elver]
+916bf0b15516 FROMGIT: kfence: fix typo in test [Marco Elver]
+5f283637d9ef BACKPORT: kfence: add test suite [Marco Elver]
+6b39d4e587e4 FROMGIT: kfence: add missing copyright header to documentation [Marco Elver]
+1aa4e1e7e7ba BACKPORT: kfence, Documentation: add KFENCE documentation [Marco Elver]
+f0618c5f3d43 BACKPORT: kfence, kasan: make KFENCE compatible with KASAN [Alexander Potapenko]
+56098f2c446e BACKPORT: mm, kfence: insert KFENCE hooks for SLUB [Alexander Potapenko]
+97782b609ca1 BACKPORT: mm, kfence: insert KFENCE hooks for SLAB [Alexander Potapenko]
+8dc878a5d175 UPSTREAM: mm/kasan: add object validation in ksize() [Marco Elver]
+eafc96212ef9 UPSTREAM: mm/kasan: change kasan_check_{read,write} to return boolean [Marco Elver]
+d3e1082d7d96 UPSTREAM: mm/kasan: introduce __kasan_check_{read,write} [Marco Elver]
+ed0a17a27e25 UPSTREAM: mm/slab: refactor common ksize KASAN logic into slab_common.c [Marco Elver]
+32eec6463d87 UPSTREAM: mm/slab: sanity-check page type when looking up cache [Kees Cook]
+1cd2839ed98c UPSTREAM: mm/slab: validate cache membership under freelist hardening [Kees Cook]
+103f8e49d28a FROMGIT: mm/slab: rerform init_on_free earlier [Alexander Popov]
+ed7e040fcaa9 FROMGIT: kfence: use pt_regs to generate stack trace on faults [Marco Elver]
+3958b32e1035 FROMGIT: kfence, arm64: add missing copyright and description header [Marco Elver]
+3350ca440e43 BACKPORT: arm64, kfence: enable KFENCE for ARM64 [Marco Elver]
+f3da89c864a9 FROMGIT: kfence, x86: add missing copyright and description header [Marco Elver]
+32b34f83d1dd BACKPORT: x86, kfence: enable KFENCE for x86 [Alexander Potapenko]
+0e58482c46e3 FROMGIT: kfence: add missing copyright and description headers [Marco Elver]
+4dcfe0f20a33 FROMGIT: kfence: add option to use KFENCE without static keys [Marco Elver]
+48233b9225cd FROMGIT: kfence: fix potential deadlock due to wake_up() [Marco Elver]
+96adc6d7c5ab FROMGIT: kfence: avoid stalling work queue task without allocations [Marco Elver]
+9cb868f385d8 FROMGIT: kfence: Fix parameter description for kfence_object_start() [Marco Elver]
+719db8e03dc6 BACKPORT: mm: add Kernel Electric-Fence infrastructure [Alexander Potapenko]
+daa34eee1e89 BACKPORT: mm: add support for kmem caches in DMA32 zone [Nicolas Boichat]
+d56da3db20c3 string.h: Add str_has_prefix() helper function [Steven Rostedt (VMware)]
+193b88a05eb3 sched/wait: add wait_event_idle() functions. [NeilBrown]
+7a4a0bb6c4e2 arm64: configs: vendor: Switch linker to LLD [Kyle Lin]
+8e75cd4b578f arm64: configs: vendor: Enable CONFIG_SHADOW_CALL_STACK [Jason Chiu]
+4a5885c91442 arm64: configs: vendor: Enable CONFIG_RD_LZ4 [Alistair Delva]
+ad3d4bbae83e ANDROID: kbuild: avoid excessively long argument lists [Sami Tolvanen]
+d533091d4c93 qcacld-3.0: Fix implicit enum-enum-cast warnings [angelomds42]
+a80f5e2ad718 fixup! qcacld-3.0: Use freq hint in scan for ssid [dianlujitao]
+5f92acbdbb19 bus: mhi: devices: netdev: Use netdev_tx_t for ndo_start_xmit [Bhaumik Bhatt]
+de7154c46672 msm: ipa3: fix callback function type for ndo_start_xmit [Sami Tolvanen]
+cb5c0a70985d BACKPORT: msm: vidc/cvp: fix function type for hfi_cmd_response_callback [Flicker372]
+8a99065a68b7 BACKPORT: msm: vidc/cvp: Fix handle_cmd_response parameter type [Miguel de Dios]
+41332e351328 BACKPORT: disp: msm: dsi: fix function type for dsi_display_clk_ctrl [Sami Tolvanen]
+30ef0d193669 qcacld-3.0: Fix the compiler error- Argument list too long [Victor Hsu]
+74de017fab20 fixup! fixup! BACKPORT: treewide: prefix header search paths with $(srctree)/ [Nick Reuter]
+03997b36248e fixup! BACKPORT: treewide: prefix header search paths with $(srctree)/ [Thomas Turner]
+b73dbcf67f88 UPSTREAM: libfdt: prefix header search paths with $(srctree)/ [Masahiro Yamada]
+baecbc0d9884 BACKPORT: treewide: prefix header search paths with $(srctree)/ [Masahiro Yamada]
+5fd42996999e kbuild: do not drop -I without parameter [Masahiro Yamada]
+25264dc9e8aa ANDROID: kallsyms: increase KSYM_NAME_LEN [Sami Tolvanen]
+
+* lineage/mirror
+b7b6083 Updated to 04-Jul-2026 10:01 UTC [Tim Schumacher]
+
+* lineage/website
+065a2e2 feed: Fix typo [LuK1337]
+ee2ff2c feed: Add rss/channel/item/content [LuK1337]
+1b71a83 post: Android Developer Verification [Nolen Johnson]
+
+* lineage/wiki
+2b261866 wiki: bugreporting: Align with reality [Michael W]
+
+* packages/apps/Twelve
+6a84b00 Twelve: Adjust track index card view colors [Asher Simonds]
+3829c67 Twelve: Mark currently played track in album fragment [LuK1337]
+
+* packages/modules/Permission
+ee30155a88 Revert "permissions: check verity before using" [Michael Bestas]
+
+* vendor/lineage
+938ec39b config: Remove deprecated flags [Michael Bestas]
+
+* vendor/qcom/opensource/libvmmem
+a4a0b08 libvmmem: Fix unused variable warning [Michael Bestas]
+1e3b3e9 libvmmem: Fix format specifier errors [Michael Bestas]
+fcf0021 Add .gitupstream file [Michael Bestas]
+
+====================
+     2026-07-03    
+====================
+* hardware/qcom-caf/sm8450/display
+9dfe541656 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
+b5b04cf1eb Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
+
+* lineage/mirror
+21c098e Updated lineage-minimal to 02-Jul-2026 22:02 UTC [Tim Schumacher]
+
+* lineage/wiki
+68106d46 wiki: Migrate odin devices to samloader-rs [LuK1337]
+8e9d82c8 wiki: Migrate heimdall devices to samloader-rs [LuK1337]
+88fc2eef devices: Correct Dragonwing branding [Nolen Johnson]
+
+====================
+     2026-07-02    
+====================
+* external/chromium-webview/prebuilt/arm
+3cc02a1 Update Chromium Webview arm to 150.0.7871.63 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+aca8d63 Update Chromium Webview arm64 to 150.0.7871.63 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+02a0000 Update Chromium Webview x86 to 150.0.7871.63 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+cf378c5 Update Chromium Webview x86_64 to 150.0.7871.63 [Kevin F. Haggerty]
+
+* lineage/hudson
+18dee8c Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/scripts
+df53508 build-webview: Update default webview to 150.0.7871.63 [Kevin F. Haggerty]
+
+* lineage/wiki
+5dd1bacc wiki: Move bullet point to proper spot [razorloves]
+
+* packages/apps/Twelve
+99c83d6 Twelve: Make Subsonic scrobble take list of "times" [LuK1337]
+e132525 Twelve: Set Subsonic scrobble submission to false [LuK1337]
+
+====================
+     2026-07-01    
+====================
+* external/chromium-webview/patches
+970cdf1 Update Chromium Webview to 150.0.7871.63 [Kevin F. Haggerty]
+
+* hardware/xiaomi
+5fe77d6 Automatic translation import [LineageOS Infra]
+
+* lineage-sdk
+5efb1235 Automatic translation import [LineageOS Infra]
+
+* lineage/crowdin
+d392d80 config: Add hardware/ayn/packages/AynParts [LuK1337]
+
+* lineage/hudson
+9ced91f hudson: Ship Retroid Pocket 6 [AnierinB]
+c40c791 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+e29c1dba wiki: Add Retroid Pocket 6 [AnierinB]
+
+* packages/apps/Glimpse
+0161fa9 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Launcher3
+fc2eb155c4 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+49b4d8b Automatic translation import [LineageOS Infra]
+
+* packages/apps/ThemePicker
+176ec557 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+22351d0 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+bbb201a Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+e705fa7 Automatic translation import [LineageOS Infra]
+
+====================
+     2026-06-30    
+====================
+* lineage/scripts
+82a3130 dev: sepolicy: remove merging for source rules [Cosmin Tanislav]
+
+* packages/apps/Updater
+a904c4a Updater: Skip clean up if network updates list is empty [LuK1337]
+c64b0fc Updater: Skip clean up for updates without download URL [LuK1337]
+
+* vendor/apn
+f61eef6 NL: Fix Youfone Internet [Erik van Velzen]
+
+====================
+     2026-06-29    
+====================
+* build/soong
+4035bec90 gen_build_prop: Disable dalvik debugging in userdebug builds [Michael Bestas]
+
+* lineage/mirror
+4d7473f Updated lineage-minimal to 29-Jun-2026 10:01 UTC [Tim Schumacher]
+
+* lineage/scripts
+48fa1fc dev: sepolicy: respect line marks when merging [Cosmin Tanislav]
+838a94b dev: sepolicy: guard macros producing absent memberships [Cosmin Tanislav]
+
+* lineage/wiki
+65189f62 xpeng: Update maintainers [Marc Bourgoin]
+03dded41 wiki: Fix wrong codename in before_install_h870 template [razorloves]
+
+* packages/apps/Twelve
+503ca9f9 Twelve: Fix search query [Timi]
+
+* vendor/extra
+a409180 Adapt to new updater and v2 api [armdebug]
+
+* vendor/lineage
+9f3cfba9 build-manifest: Call repo with REPO_TRACE=0 [Michael Bestas]
+
+====================
+     2026-06-28    
+====================
+* hardware/interfaces
+941911355a compatibility_matrices: Add kernel_config_t_4.14 [Nick Reuter]
+bd40256747 compatibility_matrices: Add kernel_config_s_4.14 to fcm6 android17 [Nick Reuter]
+40c184d189 compatibility_matrices: Allow gnss AIDL v1 on target-level 7 [Cyber Knight]
+
+* kernel/configs
+091688a Align t/android-4.14 with t/android-4.19 [Nick Reuter]
+2aa5d59 Copy s/android-4.14 to t/android-4.14 [Nick Reuter]
 
 * lineage/scripts
 009845f pixel: Fix running device.sh from anywhere but $TOP [TechPanelGM]
@@ -39,10 +417,8 @@ b678a0f Aperture: Force dark navigation bar in CameraActivity [LuK1337]
 * packages/apps/Glimpse
 0e55840 Glimpse: Handle FD open failure gracefully [Vivekachooz]
 
-* packages/apps/Settings
-338800ae4b3 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-e3572d178d6 Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-0a613951cc6 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+* tools/extract-utils
+88b42c6 extract_utils: update file on destination update [Cosmin Tanislav]
 
 * vendor/lineage
 64513aab merge_dtbs: Apply multi-threaded parallel compilation [Huang Yiwei]
@@ -69,514 +445,4 @@ c52deefc wiki: Add krazey as dm1q co-maintainer [Josip Kelecic]
 04e8f878 Revert "merge_dtbs: Sort DTBOs based on needed symbols" [Giovanni Ricca]
 a83f49d6 Revert "merge_dtbs: ignore not matching DTBOs when finding symbols for a fixup" [Giovanni Ricca]
 50364c13 Revert "merge_dtbs: allow one overlay to depend on multiple others" [Giovanni Ricca]
-
-====================
-     2026-06-26    
-====================
-* lineage/scripts
-9406600 shipper: Hide vendor name if device name contains it [LuK1337]
-
-* lineage/wiki
-5d84dc52 wiki: Add wiki->gh mapping for vermeer maintainer [LuK1337]
-f15ebfcd devices: Fix recovery partition name for FP6 [Arian]
-
-====================
-     2026-06-25    
-====================
-* kernel/xiaomi/sm8150
-338369bcf0e9 UPSTREAM: nfsd: use correct enum type in decode_cb_op_status [Stefan Agner]
-6b32f3c3e469 BACKPORT: nfsd: handle nfs3 timestamps as unsigned [Arnd Bergmann]
-c8fb5eb24812 UPSTREAM: nfsd: store stat times in fill_pre_wcc() instead of inode times [Amir Goldstein]
-733e9134a0e2 UPSTREAM: NFSv4: Encode 64-bit timestamps [Trond Myklebust]
-a0af4a95862f BACKPORT: NFSv4: Add a helper to encode/decode struct timespec [Trond Myklebust]
-01f937018522 fixup! BACKPORT: FROMGIT: hugetlb/userfaultfd: forbid huge pmd sharing when uffd enabled [Cyber Knight]
-dbff509e40cd UPSTREAM: netprio: use css ID instead of cgroup ID [Tejun Heo]
-
-* lineage/hudson
-9538197 fair is foul no more, happy birthday to thee [Arian]
-d037293 This device seriously sucks, absolutely cursed. [Nolen Johnson]
-b7fe1fd finally beating klte at variant count [Nolen Johnson]
-
-* lineage/mirror
-299ce76 Updated to 24-Jun-2026 22:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-2cd119f8 wiki: Switch to showing the display name everywhere [Arian]
-44f98686 devices: Add Fairphone 6 [Arian]
-dcaaffcb devices: Nix DRG support [Nolen Johnson]
-eb957d9d devices: Rework DirtySanta installation instructions [Nolen Johnson]
-eee4cfda devices: Add G6 Engineering BL [Nolen Johnson]
-
-* packages/apps/Updater
-73aa0c6 Updater: Update server requirements in README [Arian]
-1581210 Updater: Remove redundant NetworkUpdate fields [LuK1337]
-
-====================
-     2026-06-24    
-====================
-* device/xiaomi/sm8150-common
-3043ee4 sm8150-common: powerhint: Convert adaptive CPU throtlle hints to static hints [armdebug]
-d8fe99b sm8150-common: rootdir:  Clean up init_qcom_post_boot script [armdebug]
-
-* lineage/hudson
-cb49db8 I Took A Pill In Ibiza 🎶🎵 [Onelots]
-
-* lineage/wiki
-c7c0ad4a wiki: Add wiki->gh mapping for Spacewar maintainer [LuK1337]
-b04ef291 wiki: Add ibiza [Onelots]
-
-* packages/apps/Updater
-d18ae27 Updater: Stream A/B updates by default [pjgowtham]
-a6c293f Updater: Update bug report url to github [Vivekachooz]
-330b008 Updater: Use verified icon for ZeroStatePreference [pjgowtham]
-34f63dc Updater: Hide ZeroStatePreference while check status is visible [pjgowtham]
-8f21f80 Updater: Make update check button tonal [pjgowtham]
-1f479e2 Updater: Add note about full install on update items [pjgowtham]
-d67eacb Updater: Show Android version and security patch for updates [pjgowtham]
-a0089a5 Updater: Format security patch without day [pjgowtham]
-41bc95f Updater: Show update size label in update items [pjgowtham]
-f594611 Updater: Show year for updates outside current year [pjgowtham]
-4fd617c Updater: Migrate to api/v2 [LuK1337]
-6c07fbe Updater: Remove unused dependencies and run generatebp [pjgowtham]
-08e9d3f Updater: Avoid showing ZeroStatePreference when checking updates [pjgowtham]
-aaa7ced UpdateList: Animate item visibility on expand/collapse [pjgowtham]
-7a7cc20 Updater: Fix crash when attempting to delete update [pjgowtham]
-c075068 Updater: Fix imported update persistence [pjgowtham]
-2f4d33d Updater: Update ZeroStatePreference strings [pjgowtham]
-e199665 Updater: Post-migration cleanup of UpdatesListAdapter [pjgowtham]
-8716db2 Updater: Modernize UpdatesListAdapter [pjgowtham]
-ffef50c Updater: Improve Utils.canInstall and migrate to InstallUtils [pjgowtham]
-0a5adc3 Updater: Create buttons layout for update item [pjgowtham]
-c0d4b7b Updater: Copy CollapseBar from TopIntroPreference [pjgowtham]
-46ead38 Updater: Import and utilize new vector assets for updater [pjgowtham]
-81ad4c6 Updater: Restrict duplicate link URL capture to exclude '>' [pjgowtham]
-bb56aaf Updater: apply smoothSeconds() to ETA calculation [pjgowtham]
-546074d Updater: Increase download chunk size to 32 KiB [pjgowtham]
-df1d457 Updater: Inline functions from Utils with single call site [pjgowtham]
-53d59d0 Updater: Use platform FileUtils for file copies [pjgowtham]
-ecd3038 Updater: Use ICU and java.time for date and ETA formatting [pjgowtham]
-ae2b383 Updater: Provide responsive wide screen split layout [pjgowtham]
-785566f Updater: Open downloads page instead of copying URL [pjgowtham]
-7aced18 Updater: Drop welcome and info dialogs [pjgowtham]
-da85723 Updater: Drop material library dependency [pjgowtham]
-d79f2dc Updater: Introduce UpdatesCheck [pjgowtham]
-0acda9b Updater: Add local Lottie composable [pjgowtham]
-d89fb03 Updater: Introduce DeviceInfoBanner [pjgowtham]
-575fc99 Updater: Move preferences entry and local update prefs to footer [pjgowtham]
-4abf31b Updater: Drop LocalBroadcastManager usage and its dependency [pjgowtham]
-5d14326 Updater: Drop no_new_updates_view [pjgowtham]
-b16cabd Updater: Drop update check result toasts [pjgowtham]
-703eaa4 Updater: Show install statuses in the scaffold title [pjgowtham]
-12f2c27 Updater: Cleanup uncrypt files on boot completed [pjgowtham]
-eefd3df Updater: Cleanup unused functions from Utils [pjgowtham]
-febc645 Updater: Wire up preferences screen and migrate settings access [pjgowtham]
-d2fa25d Updater: Introduce PreferencesActivity and PreferencesScreen [pjgowtham]
-97a4e44 Updater: Introduce preferences/app state layer and UpdatesCheckWorker [pjgowtham]
-13c3923 Updater: Drop explicit AppCompat dependency [pjgowtham]
-e59c857 Updater: Force enable expressive SPA theme [pjgowtham]
-4663a9f Updater: Adopt platform Settings navigation scaffold [pjgowtham]
-5a32051 Updater: Flatten activity hierarchy [pjgowtham]
-769909b Updater: Introduce UpdatesRepository and UpdatesViewModel [pjgowtham]
-599a38f Updater: Suppress PROVIDED_RUNTIME_TOO_LOW for NetworkUpdate [LuK1337]
-d305e12 Updater: Add network data source and bump minSdk to 33 [Luca Stefani]
-039d92f Updater: Add material 3 extended icons dependency [pjgowtham]
-def70e2 Updater: Add datastore dependency [pjgowtham]
-dbc8431 Updater: Add Kotlin serialization dependency and plugin [pjgowtham]
-37a0383 Updater: Add dependencies for OkHttp [Luca Stefani]
-e0ac185 Updater: Add Kotlin dependency for livedata [pjgowtham]
-33bdc21 Updater: Add kotlin dependency for WorkManager [pjgowtham]
-3a8cf9c Updater: Clear notification actions on download completion [pjgowtham]
-83a01dc Updater: Centralize notifications into NotificationHelper [pjgowtham]
-183357d Updater: Make refresh unavailable during update check [pjgowtham]
-80e6da4 Updater: Enforce compile-time database correctness [pjgowtham]
-5676e56 Updater: Consolidate into Kotlin data classes [pjgowtham]
-7e3df5a Updater: Prefer global string resources where available [pjgowtham]
-ccc7d4a Updater: Move pre-install checks out of the adapter into InstallUtils [pjgowtham]
-d1d3946 Updater: Introduce BatteryMonitor [pjgowtham]
-5471846 Updater: Introduce NetworkMonitor [pjgowtham]
-13675f2 Updater: Simplify isNetworkAvailable() in Utils [pjgowtham]
-2666646 Updater: Make download & resume buttons network-aware [pjgowtham]
-a90e054 Updater: Revise download and installation controls [pjgowtham]
-b53c8c3 Updater: Enforce single concurrent download [pjgowtham]
-c89a5e5 Updater: Use SettingsLib SettingsOpacity for disabled alpha [pjgowtham]
-91515d5 Updater: Provide extraction script to pull jars and utilize them for previews [pjgowtham]
-7ff07a3 Updater: Match the display_name with Settings [pjgowtham]
-96812be Updater: Bump compile sdk to 36 [pjgowtham]
-f20d34e Updater: Add compose dependencies and run generatebp [pjgowtham]
-35b3cf7 Updater: Include Settings Provider Activity - Privileged [pjgowtham]
-0efdacd Updater: Suppress known-safe R8 duplicate warnings [pjgowtham]
-f35d0ac Updater: Optimize and shrink resources [Luca Stefani]
-9911d82 Updater: Remove stale proguard rule [pjgowtham]
-819133e Updater: Remove unused android-library plugin [pjgowtham]
-5224da4 Updater: Update library versions from AOSP prebuilts and public stable [pjgowtham]
-3a006b3 Updater: Update generatebp to v1.31 [pjgowtham]
-1930cbc Updater: Update Gradle wrapper and AGP [pjgowtham]
-92bda47 Updater: Migrate generatebp to plugin declaration [pjgowtham]
-f55a66b Updater: Migrate to version catalog [pjgowtham]
-e148186 Updater: Display android security patch in default locale [pjgowtham]
-b916d74 Updater: Replace BuildInfoUtils and extend SettingsLib DeviceInfoUtils [pjgowtham]
-9e67a71 Updater: Introduce Kotlin [pjgowtham]
-84bf644 Updater: Remove redundant metered network warning checkbox [pjgowtham]
-e9d9bb6 Updater: Remove URL Copied toast message [pjgowtham]
-8966525 Updater: Fix pending reboot state not shown [pjgowtham]
-6b4af63 Updater: Remove config_hideRecoveryUpdate and "Update recovery" on AB [pjgowtham]
-b66b58c Updater: Fix duplicated and truncated date for local updates [pjgowtham]
-
-====================
-     2026-06-23    
-====================
-* lineage/wiki
-98d61ea5 wiki: Remove duplicate xiaomi fw_update_success note [razorloves]
-4792aba2 wiki: Bump bronco's fw requirements [Nick Reuter]
-dd317a8a wiki: Update bronco maintainers [Nick Reuter]
-5a9c9981 wiki: Update supported models for bronco [Nick Reuter]
-880cc376 wiki: Promote bronco to 23.2 [Nick Reuter]
-
-* packages/resources/devicesettings
-9d82204 Add alert slider torch strings [Arian]
-
-====================
-     2026-06-22    
-====================
-* lineage/hudson
-000d18a hudson: NOT OJ [Nick Reuter]
-
-* lineage/wiki
-c31e5385 wiki: pdx225/pdx235 Flash vendor_boot first [LuK1337]
-2392c022 wiki: berlna: Fix wrong image [razorloves]
-
-====================
-     2026-06-21    
-====================
-* external/v4l2_codec2
-16700e0 Use the output pixel format requested by the decoder when available [Aaron Kling]
-0cd9abd Add P010 support [Aaron Kling]
-711990c V4L2DecodeInterface: Properly fetch default codec profile [Aaron Kling]
-e18bf52 Convert v4l2 hevc levels to c2 hevc levels [Aaron Kling]
-
-* frameworks/base
-c8f2005b5ed6 Allow overriding Wi-Fi and Bluetooth MAC addresses [Torsten Grote]
-
-* hardware/qcom-caf/sdm660/audio
-90647c475f post_proc: Correct libvolumelistener include_dirs [Michael Bestas]
-
-* lineage/hudson
-0e08719 resurrect that which should be dead [Nolen Johnson]
-
-* lineage/wiki
-6a245504 wiki: Use correct name for Google Messages [charcoalpt]
-
-* packages/apps/Settings
-45da074de55 Require "tap to show" in SIM settings [Torsten Grote]
-de893ecedc5 Hide Wi-Fi and Bluetooth MAC addresses in About Phone [Torsten Grote]
-
-====================
-     2026-06-20    
-====================
-* hardware/lineage/compat
-6450d58 compat: Introduce libtinyxml2 v36 [chandu078]
-f13c559 compat: Provide libbluetooth_audio_session_aidl shim [chandu078]
-
-* lineage/mirror
-8fd1615 Updated to 20-Jun-2026 10:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-8eecc04 pixel: Use standalone extractor in device.sh [Michael Bestas]
-6e67f72 pixel: Update dump-sepolicy.sh [Michael Bestas]
-1cd7329 dev: sepolicy: refactor cleanup rules [Cosmin Tanislav]
-
-====================
-     2026-06-19    
-====================
-* lineage/hudson
-658a0d3 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-94ee717 Updated to 18-Jun-2026 22:01 UTC [Tim Schumacher]
-
-* lineage/wiki
-0b748d6a devices: Promote LGE MSM8996 to 22.2 [Nolen Johnson]
-
-* vendor/apn
-8b06f42 apns: Add IMS routing for Bangladesh operators [Md. Abdullah Al Mamun]
-
-====================
-     2026-06-18    
-====================
-* lineage/scripts
-1be5e8f dev: sepolicy: use type usage for output [Cosmin Tanislav]
-6753521 dev: sepolicy: use line marks for output [Cosmin Tanislav]
-8ca4abb dev: sepolicy: simplify simple names regrouping [Cosmin Tanislav]
-87b1b5c dev: sepolicy: check if macro has any attributes [Cosmin Tanislav]
-57a3a55 dev: sepolicy: cache attribute rule types [Cosmin Tanislav]
-862362f dev: sepolicy: carry marks across when replacing rules with macros [Cosmin Tanislav]
-cecad34 dev: sepolicy: discard macro matches that span multiple lines [Cosmin Tanislav]
-5fed70f dev: sepolicy: store macro match reference policy [Cosmin Tanislav]
-cc51130 dev: sepolicy: add lmx comment parsing [Cosmin Tanislav]
-7cf8dd4 dev: sepolicy: add tie-break for equal rules and args macros [Cosmin Tanislav]
-7bc2846 dev: sepolicy: fix current[0] check [Cosmin Tanislav]
-834e404 dev: sepolicy: merge macro expansion input text in one go [Cosmin Tanislav]
-823b387 dev: sepolicy: remove useless dict copy in FrozenDict.__eq__() [Cosmin Tanislav]
-1d42f3e dev: sepolicy: fix filled rule template printing [Cosmin Tanislav]
-e618b64 dev: sepolicy: remove useless macro start assert [Cosmin Tanislav]
-876bb92 dev: sepolicy: remove leftover context functions [Cosmin Tanislav]
-e0e260a dev: sepolicy: rename cleanup() arg to match PolicyCleanupOrigin [Cosmin Tanislav]
-e6f48c1 dev: sepolicy: implement recovery extraction and not_recovery() / recovery_only() [Cosmin Tanislav]
-7c0cbd6 dev: sepolicy: optimize secilc runtime [Cosmin Tanislav]
-e9963a4 dev: sepolicy: move type merging to output [Cosmin Tanislav]
-8e312b0 dev: sepolicy: move class-set merging to output [Cosmin Tanislav]
-f8dad7a dev: sepolicy: implement Perms.__le__() [Cosmin Tanislav]
-809f7ba dev: sepolicy: refactor policy pipeline [Cosmin Tanislav]
-e8debfc dev: sepolicy: remove assert_parts_str_list() [Cosmin Tanislav]
-b2b0137 dev: sepolicy: add recovery variables support [Cosmin Tanislav]
-319c410 dev: sepolicy: sort genfs contexts [Cosmin Tanislav]
-01b72db dev: sepolicy: allow match keys to be sets [Cosmin Tanislav]
-23b03ad dev: sepolicy: build sparse index on-demand [Cosmin Tanislav]
-a39be48 dev: sepolicy: fix unpacking double-nested ioctls [Cosmin Tanislav]
-6f0e9c4 dev: sepolicy: emit braces on single ioctl range [Cosmin Tanislav]
-f3ddd4e dev: sepolicy: use regex-based CIL parser [Cosmin Tanislav]
-47c9e76 dev: sepolicy: merge all build flags [Cosmin Tanislav]
-4b17597 dev: sepolicy: refactor text reading and macro sourcing [Cosmin Tanislav]
-
-* lineage/wiki
-4c2b5cfe wiki: Add wiki->gh mapping for lemonade maintainer [LuK1337]
-
-====================
-     2026-06-17    
-====================
-* lineage/mirror
-edabe06 Updated aosp-minimal to 17-Jun-2026 05:00 UTC [Tim Schumacher]
-
-* lineage/scripts
-2be66c5 dev: sepolicy: split out SourceMacros class [Cosmin Tanislav]
-7ea9a6c dev: sepolicy: indent matching algorithm verbose output [Cosmin Tanislav]
-b9a1edd dev: sepolicy: apply merging strategy to source rules too [Cosmin Tanislav]
-984a3cf dev: sepolicy: introduce SourceRuleParser [Cosmin Tanislav]
-33b29e3 dev: sepolicy: remove extra printing [Cosmin Tanislav]
-5a71bfd dev: sepolicy: move type prepare logic to a common function [Cosmin Tanislav]
-a8ba6f7 dev: sepolicy: store conditional_types_map in Policy [Cosmin Tanislav]
-f184e2f dev: sepolicy: introduce CilRuleParser() [Cosmin Tanislav]
-de8407d dev: sepolicy: load classmap from CIL [Cosmin Tanislav]
-d889382 dev: sepolicy: fix double-nested range unpacking [Cosmin Tanislav]
-45b3964 dev: sepolicy: allow empty file prefix [Cosmin Tanislav]
-35da71f dev: sepolicy: allow optional policies [Cosmin Tanislav]
-fe57e9f dev: sepolicy: cil_file_name -> file_name, cil_prefix -> file_prefix [Cosmin Tanislav]
-0cbc1ed dev: sepolicy: allow custom location [Cosmin Tanislav]
-43bd389 dev: sepolicy: move finding CIL path higher up [Cosmin Tanislav]
-4541e7a dev: sepolicy: store policy_type.origin in a local variable [Cosmin Tanislav]
-39a329d dev: sepolicy: remove dependency on comments from ioctl merging [Cosmin Tanislav]
-d224686 dev: sepolicy: macro_required_name_body_raw -> macro_name_body [Cosmin Tanislav]
-5509471 dev: sepolicy: parse macros in attributes [Cosmin Tanislav]
-acd7523 dev: sepolicy: fix printing removed policy [Cosmin Tanislav]
-eeba4a0 dev: sepolicy: remove system_ext policy from product [Cosmin Tanislav]
-e34e208 dev: sepolicy: move rule_{defined,used}_types() to rule.py [Cosmin Tanislav]
-0aa748b dev: sepolicy: format rules when sorting, convert to string only once [Cosmin Tanislav]
-1df2f6d dev: sepolicy: fix merging class sets for ioctl rules [Cosmin Tanislav]
-ecdb479 dev: sepolicy: remove extra call to list() [Cosmin Tanislav]
-3c8f78d dev: sepolicy: inline process sigchild checks [Cosmin Tanislav]
-5ebbf97 dev: sepolicy: avoid duplicate set(varargs) [Cosmin Tanislav]
-f667c4f dev: sepolicy: create /tmp/m4 [Cosmin Tanislav]
-359216c dev: sepolicy: switch contexts parsing to simple splitting [Cosmin Tanislav]
-e808958 dev: sepolicy: optimize split_normalize_text() [Cosmin Tanislav]
-9e9fc99 dev: sepolicy: avoid building remaining args [Cosmin Tanislav]
-8be7cc1 dev: sepolicy: create ArgValues class [Cosmin Tanislav]
-6773ca0 dev: sepolicy: avoid computing matches multiple times [Cosmin Tanislav]
-1594eee dev: sepolicy: avoid evaluating perms for every src, dst pair [Cosmin Tanislav]
-f1b2531 dev: sepolicy: avoid mutating class perms [Cosmin Tanislav]
-bc83d73 dev: sepolicy: avoid StrEnum overhead [Cosmin Tanislav]
-59f3ef9 dev: sepolicy: remove .value access on StrEnum [Cosmin Tanislav]
-a6be288 dev: sepolicy: avoid double value lookup in RuleContainer.add() [Cosmin Tanislav]
-ca26978 dev: sepolicy: use dict to map CIL ioctls rule types [Cosmin Tanislav]
-7c9cdd9 dev: sepolicy: avoid duplicate equality check [Cosmin Tanislav]
-3d400cc dev: sepolicy: store macro rules in Rule [Cosmin Tanislav]
-530c0b8 dev: sepolicy: avoid re-creating rules for RuleMatch [Cosmin Tanislav]
-1146a55 dev: sepolicy: avoid parsing needed CILs multiple times [Cosmin Tanislav]
-ac71705 dev: sepolicy: remove extra tuple() call from RuleContainer::match [Cosmin Tanislav]
-822403b dev: sepolicy: move varargs to custom classes [Cosmin Tanislav]
-689b174 dev: sepolicy: optimize ConditionalType.__init__() [Cosmin Tanislav]
-d2df475 dev: sepolicy: store class sets original values [Cosmin Tanislav]
-08db52f dev: sepolicy: optimize unpack_line() [Cosmin Tanislav]
-aa511f3 dev: sepolicy: make source policy loading on-demand [Cosmin Tanislav]
-59b4a39 dev: sepolicy: remove optional classmap support from source rule [Cosmin Tanislav]
-5ae002f dev: sepolicy: improve macro rules sorting heuristic [Cosmin Tanislav]
-f6b63e5 dev: sepolicy: refactor match extraction / replacement [Cosmin Tanislav]
-2b998eb dev: sepolicy: avoid re-creating macro rules list [Cosmin Tanislav]
-a8e4ccf dev: sepolicy: avoid re-creating new_arg_values each time [Cosmin Tanislav]
-5db62a0 dev: sepolicy: go full DFS and optimize object creation [Cosmin Tanislav]
-29524b7 dev: sepolicy: optimize RuleMatch candidates finding [Cosmin Tanislav]
-9b9607b dev: sepolicy: build new rule matches in the same pass [Cosmin Tanislav]
-088b0f7 dev: sepolicy: avoid mutating rule matches [Cosmin Tanislav]
-1488537 dev: sepolicy: only generate macro rule when needed [Cosmin Tanislav]
-1a944e2 dev: sepolicy: make RuleMatch.hash and RuleMatch.hash_values private [Cosmin Tanislav]
-c1f8771 dev: sepolicy: return NotImplemented from RuleMatch.__eq__() [Cosmin Tanislav]
-e4920b3 dev: sepolicy: remove useless call to arg_values.keys() in RuleMatch.__init__() [Cosmin Tanislav]
-1f9d912 dev: sepolicy: remove useless list in RuleMatch.__init__() [Cosmin Tanislav]
-8c3cd14 dev: sepolicy: fix RuleMatch initialization [Cosmin Tanislav]
-717b593 dev: sepolicy: only preserve macros when necessary [Cosmin Tanislav]
-474681b dev: sepolicy: preserve line information and merge ioctls based on that [Cosmin Tanislav]
-aed7a82 dev: sepolicy: cache parts[0] as rule_type [Cosmin Tanislav]
-7d290cc dev: sepolicy: simplify varargs creation [Cosmin Tanislav]
-527fc00 dev: sepolicy: use built-in str.removesuffix() [Cosmin Tanislav]
-a476d8e dev: sepolicy: pre-compute macro rule args [Cosmin Tanislav]
-a0e7dee dev: sepolicy: refactor policy processing [Cosmin Tanislav]
-1506372 dev: sepolicy: remove hack used to find if a string has args [Cosmin Tanislav]
-7c89c34 dev: sepolicy: fix neverallow comment [Cosmin Tanislav]
-0a7f6f0 dev: sepolicy: split out source policy from source macros [Cosmin Tanislav]
-2d31520 dev: sepolicy: fix removing sparse contexts [Cosmin Tanislav]
-3861f0b dev: sepolicy: rewrite macro / rule parsing [Cosmin Tanislav]
-04511fc dev: sepolicy: implement MultiLevelDict.__contains__() [Cosmin Tanislav]
-f7809dd dev: sepolicy: remove unused MultiLevelDict.data() [Cosmin Tanislav]
-59982c5 dev: sepolicy: optimize MultiLevelDict [Cosmin Tanislav]
-944adc9 dev: sepolicy: pass rule to hash value function to MultiLevelDict.__init__() [Cosmin Tanislav]
-b18be6f dev: sepolicy: clean up build prop parsing and use it for vendor version [Cosmin Tanislav]
-2b6c529 dev: sepolicy: make macro rule match depth-first [Cosmin Tanislav]
-ed7db81 dev: sepolicy: print a newline after arg merging [Cosmin Tanislav]
-8ff6cbe dev: sepolicy: fix determinism in verbose output [Cosmin Tanislav]
-ef657cf dev: sepolicy: make MultiLevelDict deterministic [Cosmin Tanislav]
-1711fac dev: sepolicy: fix removing unused types from public rules [Cosmin Tanislav]
-ac7cd81 dev: sepolicy: fix adding extra rules before processing [Cosmin Tanislav]
-54564c6 dev: sepolicy: simplify resolve_rule_paths() [Cosmin Tanislav]
-7292d44 dev: sepolicy: remove unused line joining [Cosmin Tanislav]
-cee760a dev: sepolicy: use DefaultDict for conditional variable finding [Cosmin Tanislav]
-b71c43e dev: sepolicy: inline policy version printing [Cosmin Tanislav]
-b61343f dev: sepolicy: add ProcessedMacro __repr__ [Cosmin Tanislav]
-b9614f2 dev: sepolicy: use CilRule.from_line for technical debt rules [Cosmin Tanislav]
-beb7d31 dev: sepolicy: move contexts discovery to policy info [Cosmin Tanislav]
-09301c9 dev: sepolicy: simplify referencing and public rules [Cosmin Tanislav]
-8bf19af dev: sepolicy: add rules to list directly [Cosmin Tanislav]
-8e09161 dev: sepolicy: move MultiLevelDict creation in parse_prebuilt() [Cosmin Tanislav]
-473c829 dev: sepolicy: walk -> __iter__ [Cosmin Tanislav]
-84145d2 dev: sepolicy: pass source rules to be removed explicitly [Cosmin Tanislav]
-9b0165a dev: sepolicy: drop logic for removing rules from matches [Cosmin Tanislav]
-7b51c68 dev: sepolicy: consolidate prebuilt policy into a class [Cosmin Tanislav]
-9c44810 dev: sepolicy: ParsedSource -> SourcePolicy [Cosmin Tanislav]
-2b2cf7b dev: sepolicy: move public rules finding closer to usage [Cosmin Tanislav]
-d5348aa dev: sepolicy: remove option for specifying custom macros and rules [Cosmin Tanislav]
-9bd0752 dev: sepolicy: consolidate policy info into a class [Cosmin Tanislav]
-e4fea15 dev: sepolicy: factor out private and public policy processing [Cosmin Tanislav]
-b511559 dev: sepolicy: remove unused public_types parameter of find_public_rules() [Cosmin Tanislav]
-33dc9fb dev: sepolicy: move platform_decompiled_rules to usage place [Cosmin Tanislav]
-bcec48f dev: sepolicy: move decompiled_used_types to usage place [Cosmin Tanislav]
-61ad9ad dev: sepolicy: move referencing_rules to usage place [Cosmin Tanislav]
-7d8f580 dev: sepolicy: use direct class generic typing [Cosmin Tanislav]
-c6348e3 dev: sepolicy: inline print [Cosmin Tanislav]
-bd06a1f dev: sepolicy: group together public output [Cosmin Tanislav]
-ef296eb dev: sepolicy: add multiple rules in one call [Cosmin Tanislav]
-6f91034 dev: sepolicy: create dataclass to hold source rules [Cosmin Tanislav]
-76bc6e3 dev: sepolicy: factor out parsing source macros and rules [Cosmin Tanislav]
-42553e8 dev: sepolicy: factor out process_rules() [Cosmin Tanislav]
-4394a86 dev: extract_aconfig: remove aconfig-storage check [Cosmin Tanislav]
-
-* lineage/wiki
-507a3742 wiki: s/and connect USB cable to PC/then connect USB cable to PC/ [Andrew Sayers]
-ca979b23 wiki: bluetooth: 5 -> 5.0 [Onelots]
-
-====================
-     2026-06-16    
-====================
-* frameworks/base
-cb76c383ab73 [AAPM] Check radio interface for 2G availability. [Hani Kazmi]
-0d9bcd027e10 Automatic translation import [LineageOS Infra]
-
-* hardware/xiaomi
-db0da42 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-7ea5d7a0 Automatic translation import [LineageOS Infra]
-
-* lineage/wiki
-57d193a7 wiki: Google apps -> Google Apps [LuK1337]
-
-* packages/apps/Aperture
-5d4eb61 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-f301771 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Camelot
-fd64f83 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-43da4d3 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-d6b6586ee Automatic translation import [LineageOS Infra]
-
-* packages/apps/Dialer
-f1abbfd27 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DocumentsUI
-860ac584e Automatic translation import [LineageOS Infra]
-
-* packages/apps/FMRadio
-7e99797 Automatic translation import [LineageOS Infra]
-
-* packages/apps/FlipFlap
-0e9b6f6 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Glimpse
-44705bf Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-7c0c677 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-200381f216 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-4bb2e14 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Messaging
-117df5f Automatic translation import [LineageOS Infra]
-
-* packages/apps/Profiles
-1315c2c Automatic translation import [LineageOS Infra]
-
-* packages/apps/Recorder
-1c93a84 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Settings
-b7ddd79ff3e Automatic translation import [LineageOS Infra]
-
-* packages/apps/SetupWizard
-83c8d10 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-b6977d2 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-ca4a883 Automatic translation import [LineageOS Infra]
-
-* packages/inputmethods/LatinIME
-e854e8c5a Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-d14439f Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-c46cb44 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/commonsys/fm
-b9d35fb Automatic translation import [LineageOS Infra]
-
-====================
-     2026-06-15    
-====================
-* bootable/recovery
-8dc50614 recovery: Add support for analog dpad [AnierinB]
-
-* lineage-sdk
-2ccab666 Partial Reapply "LineagePreferenceLib: Ensure the preference is available before replacing" [Nick Reuter]
-
-* lineage/wiki
-1df87184 wiki: Fix my name and add a GitHub username mapping [Aelin Reidel]
-
-* packages/apps/DeskClock
-fba06ffd2 DeskClock: Increase importance of all notifications [Michael Bestas]
-
-* packages/apps/LineageParts
-0abefcb LineageParts: Update LiveDisplay color profiles to match AOSP [Nick Reuter]
-
-* packages/apps/Settings
-858826d19c2 Settings: Add a preference for LiveDisplay display profiles [Nick Reuter]
 
