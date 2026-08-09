@@ -1,5 +1,21 @@
 [
   {
+    "datetime": 1786286067,
+    "files": [
+      {
+        "filename": "lineage-23.2-20260809-UNOFFICIAL-raphael.zip",
+        "os_patch_level": "2026-08-01",
+        "os_sdk_level": 36,
+        "ota_property_files": "metadata:69:341,metadata.pb:478:234",
+        "sha256": "24db394b9e20d2516f9c9f853e044de93b8af926f4a397f9ea27e1a3cfe0f82b",
+        "size": 1408970216,
+        "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-raphael-24db394b/lineage-23.2-20260809-UNOFFICIAL-raphael.zip"
+      }
+    ],
+    "type": "unofficial",
+    "version": "23.2"
+  },
+  {
     "datetime": 1783694138,
     "files": [
       {
