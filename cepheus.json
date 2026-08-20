@@ -1,5 +1,21 @@
 [
   {
+    "datetime": 1787232090,
+    "files": [
+      {
+        "filename": "lineage-23.2-20260820-UNOFFICIAL-cepheus.zip",
+        "os_patch_level": "2026-08-01",
+        "os_sdk_level": 36,
+        "ota_property_files": "metadata:69:331,metadata.pb:468:213",
+        "sha256": "85bb2ec9f03f8d1836669316007daa57a2751928cef3a95644c4f9694f7d25dc",
+        "size": 1392031092,
+        "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-cepheus-85bb2ec9/lineage-23.2-20260820-UNOFFICIAL-cepheus.zip"
+      }
+    ],
+    "type": "unofficial",
+    "version": "23.2"
+  },
+  {
     "datetime": 1783711560,
     "files": [
       {

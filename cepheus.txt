@@ -1,440 +1,249 @@
 ====================
-     2026-07-10    
-====================
-* device/xiaomi/sm8150-common
-718875e6 NFC [armdebug]
-8068ad20 sm8150-common: Limit max brightness for green & blue leds [armdebug]
-e69b4c10 sm8150-common: Build UDFPS sensors sub-HAL [Ivan Vecera]
-5b4cfd03 sm8150-common: Compile the kernel without GCC [Michael Bestas]
-98cb2b2b sm8150-common: Set FCM level to 7 [Nolen Johnson]
-995a62a4 sm8150-common: powerhint: Convert adaptive CPU throtlle hints to static hints [armdebug]
-6b645e4b sm8150-common: powerhint: Revert "Don't mess with UFS clkgate" [armdebug]
-c150067f sm8150-common: Enable display idle_state mechanism [Midas Chien]
-
-* frameworks/base
-67f716e85088 SystemUI: Add tile to show volume panel [stofstik]
-00dc908d4828 base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
-5a1a5ca9d0a3 webkit: WebViewUpdateServiceImpl2: Use compile time debuggable check [LuK1337]
-
-* kernel/xiaomi/sm8150
-d3aa553f78e4 arm64: configs: xiaomi: Remove duplicate configs [armdebug]
-233be650e78f drivers: input: touchscreen: xiaomi: Fix FOD reporting when gestures are disabled [armdebug]
-fa700628ffda drivers: leds: Allow setting max brightness [Demon000]
-eda80bfc11f5 fixup! thermal: core: Workaround for xiaomi thermal mitigation [armdebug]
-64ba53aeb921 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Disable goodix debug [armdebug]
-6cf50d9a8711 input: touchscreen: fts_521: Re-enable FOD status during suspend [armdebug]
-770e0afda539 drivers: input: touchscreen: xiaomi: fts_521: Notify sysfs when finger is in FOD area [armdebug]
-684404b5e136 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Notify sysfs when finger is in FOD area [Ivan Vecera]
-d9d6e4c9a042 drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Update aod_status [Ivan Vecera]
-6342ad883ffd drivers: input: touchscreen: xiaomi: goodix_driver_gt9886: Do not handle impossible fod_status values [Ivan Vecera]
-bf7cffe97787 drivers: input: touchscreen: Extend common touchpanel interface by fp_state [Ivan Vecera]
-de95c40b2cee thermal: core: Workaround for xiaomi thermal mitigation [Raphiel Rollerscaperers]
-41256bd274e6 Merge remote-tracking branch 'qcom/lineage-20' into lineage-23.2 [armdebug]
-
-* lineage/scripts
-594cd33 pixel: Also update system build fingerprint [Michael Bestas]
-
-* packages/apps/Settings
-eb4154a7877 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-54b1ee8d54a Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-9b3030e1563 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-
-====================
-     2026-07-09    
-====================
-* device/xiaomi/sm8150-common
-118cce55 sm8150-common: rootdir:  Clean up init_qcom_post_boot script [armdebug]
-39c90522 sm8150-common: Increase the console log level [Ashish Bhimanpalliwar]
-d92ba9ed sm8150-common: init.qcom.rc: remove unused propery [Sean Tranchetti]
-85afb393 sm8150-common: Decrease the console log level [Raghavendra Rao Ananta]
-0c0eaf11 sm8150-common: Clean up the no longer used logdump service code. [P.Adarsh Reddy]
-630f0fd6 sm8150-common: init.qcom.rc: Removed deprecated drmdiag entry [Murthy Nidadavolu]
-98e17dff sm8150-common: init.qcom.rc: Remove unused property [Ayishwarya Narasimhan]
-ab618a2a sm8150-common: init.qcom.rc: Tuning UFS clock scaling during boot time [Gopal Iyer]
-5bf13a0f sm8150-common: init.qcom.rc: remove unused hvdcp/charger service and properties [Subbaraman Narayanamurthy]
-fa5c7e1c sm8150-common: init.qcom.rc: Removing unused setprop persist.camera.gyro.disable [Amit Kushwaha]
-
-* lineage/scripts
-c5075d1 pixel: Create directory before downloading [Michael Bestas]
-
-* lineage/website
-cae5e9e www: Add amlogic burn mode to web flash-tools mention [Nicholas Lim]
-
-* lineage/wiki
-23ee8012 wiki: bugreporting: English please [Michael W]
-
-* packages/apps/Updater
-0d94f6f Updater: Update bug report url to wiki [Michael W]
-
-====================
-     2026-07-08    
-====================
-* lineage/website
-178a956 www: Hotfix 2026-07-07 [Nolen Johnson]
-997b214 www: Add July 2026 update post [Inhishonor]
-
-* lineage/wiki
-497d3e96 wiki: Update keys list for 17 [LuK1337]
-bb9ea48f wiki: Update copy-partitions install steps [razorloves]
-
-* vendor/lineage
-7f67df02 lineage: Introduce a simple program for disabling adb remount overlays [LuK1337]
-
-====================
-     2026-07-07    
-====================
-* vendor/lineage
-8e41931d release: Bump Security String to 2026-07-01 [Nolen Johnson]
-
-====================
-     2026-07-06    
-====================
-* lineage/hudson
-b6fd1be freebox right after freedom day [Nolen Johnson]
-
-* lineage/wiki
-3a977252 devices: Import the Freebox Pop / TV | 22 [Nolen Johnson]
-
-====================
-     2026-07-05    
-====================
-* lineage/mirror
-2330004 Updated lineage-minimal to 04-Jul-2026 22:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-acd1868 lineage-priv-template: Add com.android.npumanager [LuK1337]
-
-* lineage/wiki
-e4658db0 wiki: Update avatrn and bronco firmware requirements [Nick Reuter]
-63b52758 wiki: Add reboot suggestion to recovery_install_fastboot_sony [LuK1337]
-
-====================
-     2026-07-04    
-====================
-* android
-5c3bbcb Revert "manifest: Track custom prebuilts/misc revision" [LuK1337]
-335a78f manifest: Track libvmmem [Michael Bestas]
-
-* frameworks/base
-46fd4b1f8d25 PhoneWindowManager: Fix assist key wakeup [Michael Bestas]
-
-* hardware/lineage/compat
-9e8811a compat: Provide our own libprotobuf 3.9.1 / 21.12 prebuilts [LuK1337]
-
-* hardware/qcom-caf/sm8450-6.6/audio/primary-hal
-6a4234135 effects: Link against latest android.media.audio.common.types [Bruno Martins]
-320014e80 effects: Include missing libaudioutils_headers dependency [Bruno Martins]
-30010d124 effects: Fix sign comparison errors [Bruno Martins]
-
-* kernel/xiaomi/sm8150
-d0e8ec39ab80 arm64: configs: vendor: Enable percpu high priority kthreads for erofs [Sandeep Dhavale]
-c4d3b3ec180e arm64: configs: vendor: enable CONFIG_EROFS_FS=y [Greg Kroah-Hartman]
-b08a5f5eb771 ANDROID: defconfig: Re-enable CONFIG_CRYPTO_SHA1 [Eric Biggers]
-34d83e000531 ANDROID: defconfig: switch to MODULE_SIG_SHA256 [Carlos Llamas]
-9df756bfccfb UPSTREAM: sign-file: Use only the OpenSSL CMS API for signing [Petr Pavlu]
-bd7158ef4f3f BACKPORT: module: Remove SHA-1 support for module signing [Petr Pavlu]
-e43dfd7f0e98 BACKPORT: module: Do not offer sha224 for built-in module signing [Dimitri John Ledkov]
-9dc96d9e6165 ANDROID: sign-file: Fix warning when OPENSSL_NO_ENGINE is set [Lee Jones]
-51023832d07f FROMLIST: sign-file: Use OpenSSL provided define to compile out deprecated APIs [Lee Jones]
-bfc7ea0f6657 ANDROID: extract-cert: omit PKCS#11 support if building against BoringSSL [Matthias Maennich]
-27bbbba36718 scripts/Kbuild: Use shell for getting ld-name again [Tim Zimmermann]
-b84d11b3a824 kconfig: fix warnings on format [Denis OSTERLAND]
-ef2c4f5bbc63 BACKPORT: scripts/Makefile.clang: default to LLVM_IAS=1 [Nick Desaulniers]
-dcf8a6327621 BACKPORT: Makefile: infer --target from ARCH for CC=clang [Nick Desaulniers]
-d813f35527c9 UPSTREAM: Makefile: Only specify '--prefix=' when building with clang + GNU as [Nathan Chancellor]
-7e94c1dfc885 UPSTREAM: Makefile: Remove '--gcc-toolchain' flag [Nathan Chancellor]
-628255e841b1 Revert "ANDROID: Kbuild, LLVMLinux: allow overriding clang target triple" [Nick Desaulniers]
-5a9e63537ed9 arm64: configs: vendor: reduce KFENCE pool size [Alexander Potapenko]
-f7c809223b67 arm64: configs: vendor: Enable KFENCE by setting the sample interval to 500ms [Alexander Potapenko]
-39d28a9e6c6e arm64: configs: vendor: Enable KFENCE [Alistair Delva]
-c769ccf9b2fc UPSTREAM: random: split initialization into early step and later step [Jason A. Donenfeld]
-cbf4cdf28d15 UPSTREAM: kfence: avoid passing -g for test [Marco Elver]
-995b11a813e3 UPSTREAM: kfence: fix memory leak when cat kfence objects [Baokun Li]
-233e28c7b91e UPSTREAM: kfence: unconditionally use unbound work queue [Marco Elver]
-37446b928c7a UPSTREAM: kfence: use TASK_IDLE when awaiting allocation [Marco Elver]
-aa6dfbe4df7b FROMLIST: kfence: skip all GFP_ZONEMASK allocations [Alexander Potapenko]
-445f52c97e6f FROMLIST: kfence: move the size check to the beginning of __kfence_alloc() [Alexander Potapenko]
-1aefb854f61e ANDROID: kfence: clean up unused variables [Carlos Llamas]
-d3ba5408ad92 FROMGIT: kfence: use power-efficient work queue to run delayed work [Marco Elver]
-21c7a6027fa5 FROMGIT: kfence: maximize allocation wait timeout duration [Marco Elver]
-6c31c59d23b7 FROMGIT: kfence: await for allocation using wait_event [Marco Elver]
-2509cfc3daee FROMGIT: kfence: zero guard page after out-of-bounds access [Marco Elver]
-af4b8f760062 UPSTREAM: kfence: make compatible with kmemleak [Marco Elver]
-89a215fe6a2a UPSTREAM: kfence: fix reports if constant function prefixes exist [Marco Elver]
-01d864ce333b UPSTREAM: kfence: fix printk format for ptrdiff_t [Marco Elver]
-2606ad848de5 UPSTREAM: kfence: report sensitive information based on no_hash_pointers [Marco Elver]
-f2556f39d882 UPSTREAM: lib/vsprintf: no_hash_pointers prints all addresses as unhashed [Timur Tabi]
-bdbd4072c0f3 UPSTREAM: lib: use KSTM_MODULE_GLOBALS macro in kselftest drivers [Timur Tabi]
-bd30fcf75c33 BACKPORT: kasan: use error_report_end tracepoint [Alexander Potapenko]
-bf69e812ff0f FROMGIT: kfence: use error_report_end tracepoint [Alexander Potapenko]
-d08d57ad75fb FROMGIT: tracing: add error_report_end trace point [Alexander Potapenko]
-17f1ae245690 FROMGIT: kfence: show access type in report [Marco Elver]
-916bf0b15516 FROMGIT: kfence: fix typo in test [Marco Elver]
-5f283637d9ef BACKPORT: kfence: add test suite [Marco Elver]
-6b39d4e587e4 FROMGIT: kfence: add missing copyright header to documentation [Marco Elver]
-1aa4e1e7e7ba BACKPORT: kfence, Documentation: add KFENCE documentation [Marco Elver]
-f0618c5f3d43 BACKPORT: kfence, kasan: make KFENCE compatible with KASAN [Alexander Potapenko]
-56098f2c446e BACKPORT: mm, kfence: insert KFENCE hooks for SLUB [Alexander Potapenko]
-97782b609ca1 BACKPORT: mm, kfence: insert KFENCE hooks for SLAB [Alexander Potapenko]
-8dc878a5d175 UPSTREAM: mm/kasan: add object validation in ksize() [Marco Elver]
-eafc96212ef9 UPSTREAM: mm/kasan: change kasan_check_{read,write} to return boolean [Marco Elver]
-d3e1082d7d96 UPSTREAM: mm/kasan: introduce __kasan_check_{read,write} [Marco Elver]
-ed0a17a27e25 UPSTREAM: mm/slab: refactor common ksize KASAN logic into slab_common.c [Marco Elver]
-32eec6463d87 UPSTREAM: mm/slab: sanity-check page type when looking up cache [Kees Cook]
-1cd2839ed98c UPSTREAM: mm/slab: validate cache membership under freelist hardening [Kees Cook]
-103f8e49d28a FROMGIT: mm/slab: rerform init_on_free earlier [Alexander Popov]
-ed7e040fcaa9 FROMGIT: kfence: use pt_regs to generate stack trace on faults [Marco Elver]
-3958b32e1035 FROMGIT: kfence, arm64: add missing copyright and description header [Marco Elver]
-3350ca440e43 BACKPORT: arm64, kfence: enable KFENCE for ARM64 [Marco Elver]
-f3da89c864a9 FROMGIT: kfence, x86: add missing copyright and description header [Marco Elver]
-32b34f83d1dd BACKPORT: x86, kfence: enable KFENCE for x86 [Alexander Potapenko]
-0e58482c46e3 FROMGIT: kfence: add missing copyright and description headers [Marco Elver]
-4dcfe0f20a33 FROMGIT: kfence: add option to use KFENCE without static keys [Marco Elver]
-48233b9225cd FROMGIT: kfence: fix potential deadlock due to wake_up() [Marco Elver]
-96adc6d7c5ab FROMGIT: kfence: avoid stalling work queue task without allocations [Marco Elver]
-9cb868f385d8 FROMGIT: kfence: Fix parameter description for kfence_object_start() [Marco Elver]
-719db8e03dc6 BACKPORT: mm: add Kernel Electric-Fence infrastructure [Alexander Potapenko]
-daa34eee1e89 BACKPORT: mm: add support for kmem caches in DMA32 zone [Nicolas Boichat]
-d56da3db20c3 string.h: Add str_has_prefix() helper function [Steven Rostedt (VMware)]
-193b88a05eb3 sched/wait: add wait_event_idle() functions. [NeilBrown]
-7a4a0bb6c4e2 arm64: configs: vendor: Switch linker to LLD [Kyle Lin]
-8e75cd4b578f arm64: configs: vendor: Enable CONFIG_SHADOW_CALL_STACK [Jason Chiu]
-4a5885c91442 arm64: configs: vendor: Enable CONFIG_RD_LZ4 [Alistair Delva]
-ad3d4bbae83e ANDROID: kbuild: avoid excessively long argument lists [Sami Tolvanen]
-d533091d4c93 qcacld-3.0: Fix implicit enum-enum-cast warnings [angelomds42]
-a80f5e2ad718 fixup! qcacld-3.0: Use freq hint in scan for ssid [dianlujitao]
-5f92acbdbb19 bus: mhi: devices: netdev: Use netdev_tx_t for ndo_start_xmit [Bhaumik Bhatt]
-de7154c46672 msm: ipa3: fix callback function type for ndo_start_xmit [Sami Tolvanen]
-cb5c0a70985d BACKPORT: msm: vidc/cvp: fix function type for hfi_cmd_response_callback [Flicker372]
-8a99065a68b7 BACKPORT: msm: vidc/cvp: Fix handle_cmd_response parameter type [Miguel de Dios]
-41332e351328 BACKPORT: disp: msm: dsi: fix function type for dsi_display_clk_ctrl [Sami Tolvanen]
-30ef0d193669 qcacld-3.0: Fix the compiler error- Argument list too long [Victor Hsu]
-74de017fab20 fixup! fixup! BACKPORT: treewide: prefix header search paths with $(srctree)/ [Nick Reuter]
-03997b36248e fixup! BACKPORT: treewide: prefix header search paths with $(srctree)/ [Thomas Turner]
-b73dbcf67f88 UPSTREAM: libfdt: prefix header search paths with $(srctree)/ [Masahiro Yamada]
-baecbc0d9884 BACKPORT: treewide: prefix header search paths with $(srctree)/ [Masahiro Yamada]
-5fd42996999e kbuild: do not drop -I without parameter [Masahiro Yamada]
-
-* lineage/mirror
-b7b6083 Updated to 04-Jul-2026 10:01 UTC [Tim Schumacher]
-
-* lineage/website
-065a2e2 feed: Fix typo [LuK1337]
-ee2ff2c feed: Add rss/channel/item/content [LuK1337]
-1b71a83 post: Android Developer Verification [Nolen Johnson]
-
-* lineage/wiki
-71b1233e devices: Update tundra maintainers [Nolen Johnson]
-
-* packages/apps/Twelve
-6a84b00 Twelve: Adjust track index card view colors [Asher Simonds]
-3829c67 Twelve: Mark currently played track in album fragment [LuK1337]
-
-* packages/modules/Permission
-ee30155a88 Revert "permissions: check verity before using" [Michael Bestas]
-
-* vendor/lineage
-6e3765ec config: Export TARGET_MAX_PAGE_SIZE_SUPPORTED to soong [LuK1337]
-1db95992 config: Exclude prebuilts/misc/protobuf_vendorcompat [LuK1337]
-938ec39b config: Remove deprecated flags [Michael Bestas]
-
-* vendor/qcom/opensource/libvmmem
-a4a0b08 libvmmem: Fix unused variable warning [Michael Bestas]
-1e3b3e9 libvmmem: Fix format specifier errors [Michael Bestas]
-fcf0021 Add .gitupstream file [Michael Bestas]
-
-====================
-     2026-07-03    
-====================
-* hardware/qcom-caf/sm8450-6.6/display/hal
-618af11056 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
-7f49d76991 Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
-
-* hardware/qcom-caf/sm8450/display
-9dfe541656 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
-b5b04cf1eb Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
-
-* hardware/qcom-caf/sm8550/display
-d679d895cd Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
-7ea46e207c Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
-
-* hardware/qcom-caf/sm8650/display
-7f95c24161 Revert "vmmem: Make libvmmem_headers available" [Alexander Koskovich]
-473c2b73e8 Revert "vmmem: Add dummy libvmmem shared_lib" [Alexander Koskovich]
-
-* kernel/xiaomi/sm8150
-25264dc9e8aa ANDROID: kallsyms: increase KSYM_NAME_LEN [Sami Tolvanen]
-
-* lineage/mirror
-21c098e Updated lineage-minimal to 02-Jul-2026 22:02 UTC [Tim Schumacher]
-
-* lineage/wiki
-2b261866 wiki: bugreporting: Align with reality [Michael W]
-68106d46 wiki: Migrate odin devices to samloader-rs [LuK1337]
-8e9d82c8 wiki: Migrate heimdall devices to samloader-rs [LuK1337]
-
-====================
-     2026-07-02    
-====================
-* external/chromium-webview/prebuilt/arm
-3cc02a1 Update Chromium Webview arm to 150.0.7871.63 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-aca8d63 Update Chromium Webview arm64 to 150.0.7871.63 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-02a0000 Update Chromium Webview x86 to 150.0.7871.63 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-cf378c5 Update Chromium Webview x86_64 to 150.0.7871.63 [Kevin F. Haggerty]
-
-* lineage/hudson
-18dee8c Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/scripts
-df53508 build-webview: Update default webview to 150.0.7871.63 [Kevin F. Haggerty]
-
-* lineage/wiki
-88fc2eef devices: Correct Dragonwing branding [Nolen Johnson]
-5dd1bacc wiki: Move bullet point to proper spot [razorloves]
-
-* packages/apps/Twelve
-99c83d6 Twelve: Make Subsonic scrobble take list of "times" [LuK1337]
-e132525 Twelve: Set Subsonic scrobble submission to false [LuK1337]
-
-====================
-     2026-07-01    
-====================
-* external/chromium-webview/patches
-970cdf1 Update Chromium Webview to 150.0.7871.63 [Kevin F. Haggerty]
-
-* hardware/xiaomi
-5fe77d6 Automatic translation import [LineageOS Infra]
-
-* lineage-sdk
-5efb1235 Automatic translation import [LineageOS Infra]
-
-* lineage/crowdin
-d392d80 config: Add hardware/ayn/packages/AynParts [LuK1337]
-
-* lineage/hudson
-9ced91f hudson: Ship Retroid Pocket 6 [AnierinB]
-c40c791 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-e29c1dba wiki: Add Retroid Pocket 6 [AnierinB]
-
-* packages/apps/Glimpse
-0161fa9 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Launcher3
-fc2eb155c4 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-49b4d8b Automatic translation import [LineageOS Infra]
-
-* packages/apps/ThemePicker
-176ec557 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-22351d0 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-bbb201a Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-e705fa7 Automatic translation import [LineageOS Infra]
-
-====================
-     2026-06-30    
-====================
-* vendor/apn
-f61eef6 NL: Fix Youfone Internet [Erik van Velzen]
-
-====================
-     2026-06-29    
-====================
-* build/soong
-4035bec90 gen_build_prop: Disable dalvik debugging in userdebug builds [Michael Bestas]
-
-* lineage/mirror
-4d7473f Updated lineage-minimal to 29-Jun-2026 10:01 UTC [Tim Schumacher]
-
-* lineage/scripts
-82a3130 dev: sepolicy: remove merging for source rules [Cosmin Tanislav]
-48fa1fc dev: sepolicy: respect line marks when merging [Cosmin Tanislav]
-838a94b dev: sepolicy: guard macros producing absent memberships [Cosmin Tanislav]
-
-* lineage/wiki
-65189f62 xpeng: Update maintainers [Marc Bourgoin]
-03dded41 wiki: Fix wrong codename in before_install_h870 template [razorloves]
-
-* packages/apps/Updater
-a904c4a Updater: Skip clean up if network updates list is empty [LuK1337]
-c64b0fc Updater: Skip clean up for updates without download URL [LuK1337]
-
-* vendor/lineage
-9f3cfba9 build-manifest: Call repo with REPO_TRACE=0 [Michael Bestas]
-
-====================
-     2026-06-28    
-====================
-* hardware/interfaces
-941911355a compatibility_matrices: Add kernel_config_t_4.14 [Nick Reuter]
-bd40256747 compatibility_matrices: Add kernel_config_s_4.14 to fcm6 android17 [Nick Reuter]
-40c184d189 compatibility_matrices: Allow gnss AIDL v1 on target-level 7 [Cyber Knight]
-
-* kernel/configs
-091688a Align t/android-4.14 with t/android-4.19 [Nick Reuter]
-2aa5d59 Copy s/android-4.14 to t/android-4.14 [Nick Reuter]
-
-* lineage/scripts
-009845f pixel: Fix running device.sh from anywhere but $TOP [TechPanelGM]
-992686f lineage-priv-template: Add Android 17 keys [Michael Bestas]
-8106365 pixel: dump-sepolicy: Get rid of gs-common [Michael Bestas]
-541a144 pixel: Add stallion & update ignored overlays for CP2A [Michael Bestas]
-30fd909 dev: sepolicy: macro-match after splitting [Cosmin Tanislav]
-9930b9c dev: sepolicy: allow multiple references when macro matching [Cosmin Tanislav]
-f632c73 dev: sepolicy: default missing flags to false [Cosmin Tanislav]
-a3e7f78 dev: sepolicy: parse needed flags automatically [Cosmin Tanislav]
-3343efc dev: sepolicy: cleanup against platform public/private policy [Cosmin Tanislav]
-de7b7d8 dev: sepolicy: limit class sets merging to single source statements [Cosmin Tanislav]
-
-* lineage/wiki
-fb03b84f wiki: Fix a21s unlock step wording [razorloves]
-
-* packages/apps/Aperture
-b678a0f Aperture: Force dark navigation bar in CameraActivity [LuK1337]
-
-* packages/apps/Twelve
-503ca9f9 Twelve: Fix search query [Timi]
-
-* tools/extract-utils
-88b42c6 extract_utils: update file on destination update [Cosmin Tanislav]
-
-* vendor/extra
-a409180 Adapt to new updater and v2 api [armdebug]
-
-====================
-     2026-06-27    
+     2026-08-20    
 ====================
 * frameworks/base
-a504a05d5c13 fw/b: Suggestion Popup: Tint properly [Michael W]
+52c1959ab6b5 SystemUI: Add tile to show volume panel [stofstik]
+a78c7270568f base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
 
 * hardware/lineage/interfaces
-8258d8d power-libperfmgr: Fix sustained performance mode not turning off [dianlujitao]
+87953e6 light: Priortize BREATH over TIMED_UPSTREAM [armdebug]
+
+* hardware/nxp/nfc
+4f275df snxxx: halimpl: Skip guard timer writes if autonomous mode is disabled [armdebug]
+
+* hardware/qcom-caf/thermal-legacy-um
+3ab9a72 thermal-hal: Update skin sensor name for xiaomi [armdebug]
+
+* kernel/xiaomi/sm8150
+f0abfb4426fc arm64: dts: qcom: xiaomi: Remove disp_rdump_memory node [armdebug]
+0f468ef53a6c drivers: power: supply: Fix derp [armdebug]
+57fbe2db927c Merge remote-tracking branch 'qcom/lineage-20' into HEAD [armdebug]
+
+* packages/apps/Settings
+eabd6dfce6d Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+be27434802d Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
+ad79678bf11 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
+
+====================
+     2026-08-19    
+====================
+* device/qcom/sepolicy_vndr/sm8450
+269c7aca0 sepolicy_vndr: Add label for 64-bit ssgqmigd [Alexander Koskovich]
+
+* device/xiaomi/sm8150-common
+b177602 sm8150-common: Disable the property debug.sf.enable_gl_backpressure [quic_swarbu]
+04bdd8e [DNM] sm8150-common: Limit max brightness for green & blue leds [armdebug]
+0475a28 sm8150-common: Build UDFPS sensors sub-HAL [Ivan Vecera]
+94c81a0 sm8150-common: Compile the kernel without GCC [Michael Bestas]
 
 * lineage/mirror
-138899b Updated to 26-Jun-2026 22:01 UTC [Tim Schumacher]
+3171ffe Updated to 19-Aug-2026 06:01 UTC [LineageOS Infra]
+
+* vendor/xiaomi/sm8150-common
+f5f2017 sm8150-common: Sync with device tree [armdebug]
+
+====================
+     2026-08-18    
+====================
+* device/xiaomi/sm8150-common
+fc1f484 sm8150-common: Set FCM level to 7 [Nolen Johnson]
+2dc2f7c sm8150-common: Enable LZ4 compression for ramdisks [Lisa Liu]
+713949c sm8150-common: Add missing IWLAN overlay [armdebug]
+17e5111 sm8150-common: Label some wakeup nodes [armdebug]
+
+====================
+     2026-08-17    
+====================
+* kernel/xiaomi/sm8150
+abe4d493bd89 kconfig: run olddefconfig instead of oldconfig after merging fragments [Masahiro Yamada]
+
+* lineage/hudson
+82331a0 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Jelly
+7678330 Jelly: Desktop shortcuts [SaeedDev94]
+
+====================
+     2026-08-16    
+====================
+* lineage-sdk
+d6f6ca70 Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+16b51f5 Updated lineage-minimal to 16-Aug-2026 06:02 UTC [LineageOS Infra]
+
+* lineage/scripts
+6556196 lineage-priv-template: Check apexes in `*/apex` instead of `obj` [LuK1337]
+9024f8d lineage-priv-template: Add com.android.hardware.drm.clearkey [LuK1337]
 
 * lineage/wiki
-c308483d wiki: Fix search underline color [LuK1337]
-5544a60e devices: g12*: Update and sort maintainers [Nolen Johnson]
-c52deefc wiki: Add krazey as dm1q co-maintainer [Josip Kelecic]
+d887f9c6 wiki: signing_builds: Add com.android.hardware.drm.clearkey [LuK1337]
+6b2be946 wiki: b0s/g0s/r0s: 3x -> 3 x [LuK1337]
+87eef6ed wiki: b0s/g0s/r0s: Mark as not unlockable [LuK1337]
+dca0a19d wiki: Add Galaxy S22 (Exynos) Devices [ExtremeXT]
 
-* packages/apps/Glimpse
-0e55840 Glimpse: Handle FD open failure gracefully [Vivekachooz]
+* packages/apps/Aperture
+5e7bef0 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+519341282 Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+df5dd9d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+adf61c13902 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+55ab580 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Updater
+7796b02 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+a35ba05 Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+cbbc60a Automatic translation import [LineageOS Infra]
+
+====================
+     2026-08-15    
+====================
+* kernel/xiaomi/sm8150
+b87799bf765e arm64: dts: qcom: Remove unused conflicting disp_rdump_memory region [AngeloGioacchino Del Regno]
+
+* lineage/hudson
+1cec7d4 hudson: Add Galaxy S22 (Exynos) Devices [ExtremeXT]
+
+* packages/apps/Jelly
+8bf990f Jelly: Add setting to toggle WebView debugging [SaeedDev94]
+
+====================
+     2026-08-14    
+====================
+* external/exfatprogs
+de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into lineage-23.2 [LuK1337]
+a37d327 exfatprogs: release 1.4.3 version [Hyunchul Lee]
+4f92594 libexfat: avoid overflow in file size calculation [Faron Xu]
+
+* lineage/hudson
+1635a87 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+c324bd7a wiki: Add peripherals sort validator [LuK1337]
+
+====================
+     2026-08-13    
+====================
+* hardware/qcom-caf/sm8450-6.6/audio/pal
+8342f6301 ResourceManager: Move some logging to verbose [Nick Reuter]
+
+* hardware/qcom-caf/sm8550/audio/pal
+39e763ea1 ResourceManager: Move some logging to verbose [Nick Reuter]
+
+* hardware/qcom-caf/sm8650/audio/pal
+9cad645e8 ResourceManager: Move some logging to verbose [Nick Reuter]
+
+* hardware/qcom-caf/sm8750/audio/pal
+c0f825a23 ResourceManager: Move some logging to verbose [Nick Reuter]
+
+* lineage/mirror
+d5211ce Updated to 13-Aug-2026 00:02 UTC [LineageOS Infra]
+62495e8 Updated lineage-minimal to 12-Aug-2026 18:02 UTC [LineageOS Infra]
+
+* lineage/wiki
+f3e2ee73 wiki: gts4lv/gts4lvwifi: Update peripherals [LuK1337]
+54ffce7c wiki: odin_m0/odin_m2: Sort peripherals [LuK1337]
+
+* vendor/qcom/opensource/vibrator
+afe7232 vibrator: Add support for drv260x:haptics input device [Giovanni Ricca]
+
+====================
+     2026-08-12    
+====================
+* hardware/qcom-caf/sm8450/audio/pal
+c6f8e48dd ResourceManager: Move some logging to verbose [Nick Reuter]
+
+* lineage/mirror
+1c14b8c Updated to 12-Aug-2026 06:01 UTC [LineageOS Infra]
+
+* lineage/wiki
+ebc1390b Correct a typo in `pages/emulator.md` [Benjamin]
+
+* packages/apps/Dialer
+354ba0563 Dialer: Only show RTT button when enabled in accessibility [Michael W]
 
 * vendor/lineage
-64513aab merge_dtbs: Apply multi-threaded parallel compilation [Huang Yiwei]
+40bf2561 fixup! kernel: Fix build error when modules finder returns nothing [Yumi Yukimura]
+
+====================
+     2026-08-11    
+====================
+* kernel/xiaomi/sm8150
+a8306aea3975 BACKPORT: locking/rtmutex: Skip remove_waiter() when waiter is not enqueued [Davidlohr Bueso]
+135a3f017904 BACKPORT: rtmutex: Use waiter::task instead of current in remove_waiter() [Keenan Dong]
+5ac3bf788ffc tcp: fix an incorrect __user annotation on tcp_use_userconfig_sysctl_handler [Tashfin Shakeer Rhythm]
+b56fad71013b tcp: fix an incorrect __user annotation on tcp_proc_delayed_ack_control [Tashfin Shakeer Rhythm]
+
+* vendor/lineage
+1e936178 kernel: Fix build error when modules finder returns nothing [Yumi Yukimura]
+
+====================
+     2026-08-10    
+====================
+* hardware/lineage/interfaces
+805d253 health: Fix charging deadline node assignment [dkpost3]
+
+* lineage/hudson
+1baa804 Regenerate device dependency mappings [LineageOS Infra]
+
+====================
+     2026-08-09    
+====================
+* frameworks/base
+094652839e07 SystemUI: Fix missing focus highlight in TV global actions [Vitaliy Tomin]
+
+* lineage/mirror
+91c833c Updated to 09-Aug-2026 12:01 UTC [LineageOS Infra]
+
+* packages/apps/Jelly
+ce20325 Jelly: Fullscreen shortcut: dynamic statusbar color [SaeedDev94]
+
+* vendor/apn
+05ceef7 DE: Set IPV4V6 as protocol for o2 APNs [maximilianovermeyer]
+
+====================
+     2026-08-08    
+====================
+* device/lineage/sepolicy
+c6e972c common: private: Extend mediashell dontaudit [Nolen Johnson]
+
+* frameworks/base
+aaa4284f7e06 fixup! SystemUI: Fix battery icon not hiding from the status bar [LuK1337]
+5a663c8803db SystemUI: Fix battery icon not hiding from the status bar [Henrik Karlsson]
+
+* hardware/qcom-caf/common
+1805784 fcm: Bump com.quicinc.cne.server to 2.3 [Giovanni Ricca]
+
+====================
+     2026-08-07    
+====================
+* build/make
+5a841be38f build: Handle `BOARD_USES_RECOVERY_AS_BOOT` case for `BOARD_CUSTOM_BOOTIMG_MK` [Yumi Yukimura]
+
+* external/exfatprogs
+ef090d4 fsck: optimize unused dentry scan [David Timber]
+ac8a948 fsck: scan unused dentries in larger reads [Namjae Jeon]
+
+* lineage/hudson
+3ccf41f Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+1a9d181f wiki: rtwo: Update Moto X40 variant to A15 firmware [Marc Bourgoin]
+
+* vendor/apn
+8322c36 APN: Declare type for T-Mobile Project Fi [Nolen Johnson]
+35a216e apn: RU: Update T-Mobile APN [Roman Rikhter]
+fb4e2d8 apn: Make "type" required [Roman Rikhter]
+8e71eb2 apn: Remove ATT Activation [Roman Rikhter]
 
