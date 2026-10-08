@@ -1,5 +1,21 @@
 [
   {
+    "datetime": 1791468808,
+    "files": [
+      {
+        "filename": "lineage-23.2-20261008-UNOFFICIAL-raphael.zip",
+        "os_patch_level": "2026-10-01",
+        "os_sdk_level": 36,
+        "ota_property_files": "metadata:69:341,metadata.pb:478:234",
+        "sha256": "e1c9b038b25bfa22cf593cf2391224f18107c7417e1442150ecd29265323df9d",
+        "size": 1410294914,
+        "url": "https://github.com/sm8150-playground/OTA/releases/download/23.2-raphael-e1c9b038/lineage-23.2-20261008-UNOFFICIAL-raphael.zip"
+      }
+    ],
+    "type": "unofficial",
+    "version": "23.2"
+  },
+  {
     "datetime": 1787238400,
     "files": [
       {
@@ -26,22 +42,6 @@
         "sha256": "24db394b9e20d2516f9c9f853e044de93b8af926f4a397f9ea27e1a3cfe0f82b",
         "size": 1408970216,
         "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-raphael-24db394b/lineage-23.2-20260809-UNOFFICIAL-raphael.zip"
-      }
-    ],
-    "type": "unofficial",
-    "version": "23.2"
-  },
-  {
-    "datetime": 1783694138,
-    "files": [
-      {
-        "filename": "lineage-23.2-20260710-UNOFFICIAL-raphael.zip",
-        "os_patch_level": "2026-07-01",
-        "os_sdk_level": 36,
-        "ota_property_files": "metadata:69:341,metadata.pb:478:234",
-        "sha256": "715079a9b84d2175dde349db849af801a5b96bc4422e06edc8c57b0e4819f71f",
-        "size": 1407410835,
-        "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-raphael-715079a9/lineage-23.2-20260710-UNOFFICIAL-raphael.zip"
       }
     ],
     "type": "unofficial",
