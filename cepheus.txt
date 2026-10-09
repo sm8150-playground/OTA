@@ -1,249 +1,272 @@
 ====================
-     2026-08-20    
+     2026-10-09    
 ====================
 * frameworks/base
-52c1959ab6b5 SystemUI: Add tile to show volume panel [stofstik]
-a78c7270568f base: Add three-fingers-swipe to screenshot [1/2] [ghbhaha]
+f4ed08a03b51 Fix potential OOM in PduParser by using stream skip [Pranit Rane]
+47a31e21f05a Fix security vulnerabilities in PduParser.java [Aishwarya Mallampati]
 
-* hardware/lineage/interfaces
-87953e6 light: Priortize BREATH over TIMED_UPSTREAM [armdebug]
-
-* hardware/nxp/nfc
-4f275df snxxx: halimpl: Skip guard timer writes if autonomous mode is disabled [armdebug]
-
-* hardware/qcom-caf/thermal-legacy-um
-3ab9a72 thermal-hal: Update skin sensor name for xiaomi [armdebug]
-
-* kernel/xiaomi/sm8150
-f0abfb4426fc arm64: dts: qcom: xiaomi: Remove disp_rdump_memory node [armdebug]
-0f468ef53a6c drivers: power: supply: Fix derp [armdebug]
-57fbe2db927c Merge remote-tracking branch 'qcom/lineage-20' into HEAD [armdebug]
-
-* packages/apps/Settings
-eabd6dfce6d Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-be27434802d Settings: Move battery mAh readout to BatteryHeaderPreference [armdebug]
-ad79678bf11 Settings: Add three-fingers-swipe to screenshot [2/2] [ghbhaha]
-
-====================
-     2026-08-19    
-====================
-* device/qcom/sepolicy_vndr/sm8450
-269c7aca0 sepolicy_vndr: Add label for 64-bit ssgqmigd [Alexander Koskovich]
-
-* device/xiaomi/sm8150-common
-b177602 sm8150-common: Disable the property debug.sf.enable_gl_backpressure [quic_swarbu]
-04bdd8e [DNM] sm8150-common: Limit max brightness for green & blue leds [armdebug]
-0475a28 sm8150-common: Build UDFPS sensors sub-HAL [Ivan Vecera]
-94c81a0 sm8150-common: Compile the kernel without GCC [Michael Bestas]
-
-* lineage/mirror
-3171ffe Updated to 19-Aug-2026 06:01 UTC [LineageOS Infra]
-
-* vendor/xiaomi/sm8150-common
-f5f2017 sm8150-common: Sync with device tree [armdebug]
-
-====================
-     2026-08-18    
-====================
-* device/xiaomi/sm8150-common
-fc1f484 sm8150-common: Set FCM level to 7 [Nolen Johnson]
-2dc2f7c sm8150-common: Enable LZ4 compression for ramdisks [Lisa Liu]
-713949c sm8150-common: Add missing IWLAN overlay [armdebug]
-17e5111 sm8150-common: Label some wakeup nodes [armdebug]
-
-====================
-     2026-08-17    
-====================
-* kernel/xiaomi/sm8150
-abe4d493bd89 kconfig: run olddefconfig instead of oldconfig after merging fragments [Masahiro Yamada]
-
-* lineage/hudson
-82331a0 Regenerate device dependency mappings [LineageOS Infra]
-
-* packages/apps/Jelly
-7678330 Jelly: Desktop shortcuts [SaeedDev94]
-
-====================
-     2026-08-16    
-====================
-* lineage-sdk
-d6f6ca70 Automatic translation import [LineageOS Infra]
-
-* lineage/mirror
-16b51f5 Updated lineage-minimal to 16-Aug-2026 06:02 UTC [LineageOS Infra]
+* hardware/lineage/compat
+4d12411 libinput: Provide A16 QPR1 ABI shim [Alcatraz323]
 
 * lineage/scripts
-6556196 lineage-priv-template: Check apexes in `*/apex` instead of `obj` [LuK1337]
-9024f8d lineage-priv-template: Add com.android.hardware.drm.clearkey [LuK1337]
+71b1a91 pixel: Add an option to only dump the factory image [Michael Bestas]
 
 * lineage/wiki
-d887f9c6 wiki: signing_builds: Add com.android.hardware.drm.clearkey [LuK1337]
-6b2be946 wiki: b0s/g0s/r0s: 3x -> 3 x [LuK1337]
-87eef6ed wiki: b0s/g0s/r0s: Mark as not unlockable [LuK1337]
-dca0a19d wiki: Add Galaxy S22 (Exynos) Devices [ExtremeXT]
-
-* packages/apps/Aperture
-5e7bef0 Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-519341282 Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-df5dd9d Automatic translation import [LineageOS Infra]
+a91f6dce devices: Add more missing peripherals to Galaxy Tab S7 [Bruno Martins]
+5d57aa27 devices: Add "DP over USB-C" feature on Galaxy Tab S7 [Bruno Martins]
 
 * packages/apps/Settings
-adf61c13902 Automatic translation import [LineageOS Infra]
+513b816d7ac Settings: Fix custom Private DNS hostname being overwritten [armdebug]
+
+* packages/modules/Bluetooth
+38041e7198 Remove unused ext_attrs from playerapplicationsetting_cb [Brian Delwiche]
+
+* vendor/lineage
+ca37c450 release: Bump Security String to 2026-10-01 [Nolen Johnson]
+
+====================
+     2026-10-08    
+====================
+* lineage/crowdin
+ab74e67 config: Initial lineage-24.0 changes [Michael Bestas]
+
+* lineage/mirror
+2cba838 Updated to 08-Oct-2026 00:02 UTC [LineageOS Infra]
+b8cce6c Updated to 07-Oct-2026 18:01 UTC [LineageOS Infra]
+
+* lineage/wiki
+30cd8f38 devices: Update maintainer list of odin2portal [Bruno Martins]
+
+* vendor/apn
+35d822d apn: Remove YT and separate Palestinian APNs from IL [dianlujitao]
+5ff92c8 apn: Make "type" optional [dianlujitao]
+6a79ec4 IE: Add Lidl Connect [dianlujitao]
+
+====================
+     2026-10-07    
+====================
+* lineage/mirror
+7900dcb Updated to 07-Oct-2026 00:02 UTC [LineageOS Infra]
+
+* lineage/wiki
+3ed844a0 wiki: Modify FAQ page to link to xdaforums.com [boplaid]
+
+* vendor/apn
+0d9bfd6 NP: Update Nepal apns [razorloves]
+
+====================
+     2026-10-06    
+====================
+* frameworks/base
+f0316a80dc51 bootanimation: Request a high priority EGL context [Alexander Koskovich]
+
+* frameworks/opt/telephony
+a6e94555e0 RESTRICT AUTOMERGE: Fix remote DoS in decodeWapPdu (b/517376969) [Thomas Nguyen]
+
+* lineage/mirror
+44510e5 Updated to 06-Oct-2026 00:02 UTC [LineageOS Infra]
+
+====================
+     2026-10-05    
+====================
+* hardware/qcom-caf/common
+5cd5360 common: Do not enable SMMU proxy for parrot/taro even if UM_6_6 [Alexander Koskovich]
+
+====================
+     2026-10-04    
+====================
+* hardware/nxp/nfc
+1459e3f Revert "Fix Use-After-Free in NXP NFC HAL timer teardown" [LuK1337]
+
+* lineage/mirror
+fe506e2 Updated lineage-minimal to 04-Oct-2026 12:02 UTC [LineageOS Infra]
+
+====================
+     2026-10-03    
+====================
+* lineage/website
+77fc218 www: Fix typo in security patch backporting graphic [Nolen Johnson]
 
 * packages/apps/Twelve
-55ab580 Automatic translation import [LineageOS Infra]
+45dc00e Twelve: Refactor navbar fragment handling [Luca Stefani]
+ca81451 Twelve: Update play bar with new design [Luca Stefani]
+
+====================
+     2026-10-01    
+====================
+* device/qcom/sepolicy_vndr/sm8750
+490d47fb8 common: Label /sys/class/qcom-battery for everyone [Michael Bestas]
+
+* lineage/charter
+29a6394 charter: Allow emulating DT2W with single tap [nift4]
+
+* lineage/mirror
+d1bd129 Updated to 30-Sep-2026 18:01 UTC [LineageOS Infra]
+
+* packages/apps/Aperture
+f7c0a93 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+2dbd591 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+922ab7d Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+616807bba Automatic translation import [LineageOS Infra]
+
+* packages/apps/ExactCalculator
+153847a ExactCalculator: Add REUSE to gerrit checks [Luca Stefani]
+df45a1f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+1bb5edd Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+3912d73 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+d602f96 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Updater
-7796b02 Automatic translation import [LineageOS Infra]
+1d06090 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+c9f481f1 Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+b3556d4 Automatic translation import [LineageOS Infra]
 
 * vendor/crowdin
-a35ba05 Automatic translation import [LineageOS Infra]
+ee302b4 Automatic translation import [LineageOS Infra]
 
 * vendor/qcom/opensource/commonsys/fm
-cbbc60a Automatic translation import [LineageOS Infra]
+89bc3d4 Automatic translation import [LineageOS Infra]
 
 ====================
-     2026-08-15    
+     2026-09-30    
 ====================
-* kernel/xiaomi/sm8150
-b87799bf765e arm64: dts: qcom: Remove unused conflicting disp_rdump_memory region [AngeloGioacchino Del Regno]
+* lineage/scripts
+be7611c sf_offsets: Add support for parsing debug.sf.high_fps_(early/late) props [AdarshGrewal]
+695ceae sf_offsets: Support legacy advanced SF offset XML [AdarshGrewal]
+
+====================
+     2026-09-29    
+====================
+* lineage/hudson
+94ee70b hudson: Drop official support for manaus [rexix01]
+
+* lineage/wiki
+902bd577 wiki: Update Apollon maintainers [Khalvat-M]
+2b785eb0 wiki: devices: Drop official support for manaus [rexix01]
+ea5b86ae wiki: Add wiki->gh mapping for nuwa maintainer [LuK1337]
+
+* packages/apps/LineageParts
+63d7666 Regenerate contributors cloud (2026-09-25) [Kevin F. Haggerty]
+
+* packages/apps/Settings
+8d8f6486b27 fixup! Settings: Add LineageParts charging sound settings preference [Michael Bestas]
+
+* packages/apps/SettingsIntelligence
+9d4bbdd SettingsIntelligence: Match the Settings search bar style [Michael Bestas]
+
+* system/core
+eb2de7321 toolbox/modprobe: Add parallel option to load modules in parallel [Jaehyoung Choi]
+
+====================
+     2026-09-28    
+====================
+* hardware/qcom-caf/sm8450/display
+aea8d60119 composer: Skip device composition for cursor layer [LuK1337]
+
+* lineage/contributors-cloud-generator
+68b3aa8 Bump DEFAULT_CLOUD_SIZE to 2104 [Kevin F. Haggerty]
+
+* lineage/crowdin
+ad586f0 config: Move translations of hard forked apps [Michael Bestas]
+7039ee4 crowdin: Fix upload [Michael Bestas]
 
 * lineage/hudson
-1cec7d4 hudson: Add Galaxy S22 (Exynos) Devices [ExtremeXT]
-
-* packages/apps/Jelly
-8bf990f Jelly: Add setting to toggle WebView debugging [SaeedDev94]
-
-====================
-     2026-08-14    
-====================
-* external/exfatprogs
-de8ba66 Merge tag '1.4.3' of https://github.com/exfatprogs/exfatprogs into lineage-23.2 [LuK1337]
-a37d327 exfatprogs: release 1.4.3 version [Hyunchul Lee]
-4f92594 libexfat: avoid overflow in file size calculation [Faron Xu]
-
-* lineage/hudson
-1635a87 Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/wiki
-c324bd7a wiki: Add peripherals sort validator [LuK1337]
-
-====================
-     2026-08-13    
-====================
-* hardware/qcom-caf/sm8450-6.6/audio/pal
-8342f6301 ResourceManager: Move some logging to verbose [Nick Reuter]
-
-* hardware/qcom-caf/sm8550/audio/pal
-39e763ea1 ResourceManager: Move some logging to verbose [Nick Reuter]
-
-* hardware/qcom-caf/sm8650/audio/pal
-9cad645e8 ResourceManager: Move some logging to verbose [Nick Reuter]
-
-* hardware/qcom-caf/sm8750/audio/pal
-c0f825a23 ResourceManager: Move some logging to verbose [Nick Reuter]
+6776a52 hudson: Add Galaxy Note20 [CmdCtrlDevic3]
+fa2198a Regenerate device dependency mappings [LineageOS Infra]
 
 * lineage/mirror
-d5211ce Updated to 13-Aug-2026 00:02 UTC [LineageOS Infra]
-62495e8 Updated lineage-minimal to 12-Aug-2026 18:02 UTC [LineageOS Infra]
+65d5ac4 Updated lineage-minimal to 28-Sep-2026 06:02 UTC [LineageOS Infra]
+e0c823f Updated to 27-Sep-2026 18:01 UTC [LineageOS Infra]
 
 * lineage/wiki
-f3e2ee73 wiki: gts4lv/gts4lvwifi: Update peripherals [LuK1337]
-54ffce7c wiki: odin_m0/odin_m2: Sort peripherals [LuK1337]
+f1c057bd wiki: Add Galaxy Note20 [CmdCtrlDevic3]
 
-* vendor/qcom/opensource/vibrator
-afe7232 vibrator: Add support for drv260x:haptics input device [Giovanni Ricca]
+* packages/apps/AudioFX
+0421f49 AudioFX: Import translations from vendor/crowdin [Michael Bestas]
 
-====================
-     2026-08-12    
-====================
-* hardware/qcom-caf/sm8450/audio/pal
-c6f8e48dd ResourceManager: Move some logging to verbose [Nick Reuter]
+* packages/apps/DeskClock
+e517ae8f2 DeskClock: Import translations from vendor/crowdin [Michael Bestas]
 
-* lineage/mirror
-1c14b8c Updated to 12-Aug-2026 06:01 UTC [LineageOS Infra]
+* packages/apps/ExactCalculator
+4f8347b ExactCalculator: Import translations from vendor/crowdin [Michael Bestas]
 
-* lineage/wiki
-ebc1390b Correct a typo in `pages/emulator.md` [Benjamin]
+* packages/apps/LineageParts
+1f1ce39 LineageParts: Support leanback-only key handler targets [Bruno Martins]
 
-* packages/apps/Dialer
-354ba0563 Dialer: Only show RTT button when enabled in accessibility [Michael W]
+* packages/apps/SettingsIntelligence
+3d62764 SettingsIntelligence: Implement edge-to-edge [Michael Bestas]
+539ceb7 SettingsIntelligence: Remove targetSdkVersion [Michael Bestas]
+
+* packages/apps/Updater
+dd48551 Updater: Make it reuse compatible again [Saalim Quadri]
+
+* vendor/crowdin
+21ffa2e Move translations of hard forked apps [Michael Bestas]
 
 * vendor/lineage
-40bf2561 fixup! kernel: Fix build error when modules finder returns nothing [Yumi Yukimura]
+686d8669 overlay: Update DocumentsUIOverlay [Michael Bestas]
+ac68447e config: Build Gallery2 until Glimpse can edit images [Nolen Johnson]
 
 ====================
-     2026-08-11    
+     2026-09-27    
 ====================
-* kernel/xiaomi/sm8150
-a8306aea3975 BACKPORT: locking/rtmutex: Skip remove_waiter() when waiter is not enqueued [Davidlohr Bueso]
-135a3f017904 BACKPORT: rtmutex: Use waiter::task instead of current in remove_waiter() [Keenan Dong]
-5ac3bf788ffc tcp: fix an incorrect __user annotation on tcp_use_userconfig_sysctl_handler [Tashfin Shakeer Rhythm]
-b56fad71013b tcp: fix an incorrect __user annotation on tcp_proc_delayed_ack_control [Tashfin Shakeer Rhythm]
-
-* vendor/lineage
-1e936178 kernel: Fix build error when modules finder returns nothing [Yumi Yukimura]
-
-====================
-     2026-08-10    
-====================
-* hardware/lineage/interfaces
-805d253 health: Fix charging deadline node assignment [dkpost3]
-
 * lineage/hudson
-1baa804 Regenerate device dependency mappings [LineageOS Infra]
-
-====================
-     2026-08-09    
-====================
-* frameworks/base
-094652839e07 SystemUI: Fix missing focus highlight in TV global actions [Vitaliy Tomin]
-
-* lineage/mirror
-91c833c Updated to 09-Aug-2026 12:01 UTC [LineageOS Infra]
-
-* packages/apps/Jelly
-ce20325 Jelly: Fullscreen shortcut: dynamic statusbar color [SaeedDev94]
-
-* vendor/apn
-05ceef7 DE: Set IPV4V6 as protocol for o2 APNs [maximilianovermeyer]
-
-====================
-     2026-08-08    
-====================
-* device/lineage/sepolicy
-c6e972c common: private: Extend mediashell dontaudit [Nolen Johnson]
-
-* frameworks/base
-aaa4284f7e06 fixup! SystemUI: Fix battery icon not hiding from the status bar [LuK1337]
-5a663c8803db SystemUI: Fix battery icon not hiding from the status bar [Henrik Karlsson]
-
-* hardware/qcom-caf/common
-1805784 fcm: Bump com.quicinc.cne.server to 2.3 [Giovanni Ricca]
-
-====================
-     2026-08-07    
-====================
-* build/make
-5a841be38f build: Handle `BOARD_USES_RECOVERY_AS_BOOT` case for `BOARD_CUSTOM_BOOTIMG_MK` [Yumi Yukimura]
-
-* external/exfatprogs
-ef090d4 fsck: optimize unused dentry scan [David Timber]
-ac8a948 fsck: scan unused dentries in larger reads [Namjae Jeon]
-
-* lineage/hudson
-3ccf41f Regenerate device dependency mappings [LineageOS Infra]
+c26f1ee spread your wings wide, crocodile [Han Sol Jin]
 
 * lineage/wiki
-1a9d181f wiki: rtwo: Update Moto X40 variant to A15 firmware [Marc Bourgoin]
+896c3b36 wiki: add LG Wing (winglm) [Han Sol Jin]
+b148e9c2 wiki: add LG Velvet 5G (caymanlm) [Han Sol Jin]
+de382267 Gemfile: Ungroup test dependencies [LuK1337]
+8986a7b2 Gemfile: Update listen from 3.8.0 to 3.10.0 [LuK1337]
+6159f814 github: Bump Ruby version to 3.4 [LuK1337]
+02483344 wiki: explicitly specify local Ruby version and update script [Han Sol Jin]
+37012c18 Gemfile: remove unnecessary explicit dependencies [Han Sol Jin]
+760b6503 Gemfile: bump Jekyll to 4.4.1 and regenerate dependencies [Han Sol Jin]
 
-* vendor/apn
-8322c36 APN: Declare type for T-Mobile Project Fi [Nolen Johnson]
-35a216e apn: RU: Update T-Mobile APN [Roman Rikhter]
-fb4e2d8 apn: Make "type" required [Roman Rikhter]
-8e71eb2 apn: Remove ATT Activation [Roman Rikhter]
+* packages/modules/Bluetooth
+03cb8e33c1 Bluetooth: Classify configured devices as remote controls [Bruno Martins]
+
+====================
+     2026-09-26    
+====================
+* external/chromium-webview/prebuilt/arm
+fd29391 Update Chromium Webview arm to 154.0.8037.57 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/arm64
+394b243 Update Chromium Webview arm64 to 154.0.8037.57 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+79bba09 Update Chromium Webview x86 to 154.0.8037.57 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+32aceaa Update Chromium Webview x86_64 to 154.0.8037.57 [Kevin F. Haggerty]
+
+* lineage-sdk
+7cca417d lineage: res: Map all apps (ALL_APPS) key [Bruno Martins]
+57e3fad0 lineage: res: Add missing mapping for Prime Video [Bruno Martins]
+
+* lineage/hudson
+1fd9d41 Regenerate device dependency mappings [LineageOS Infra]
+
+* packages/apps/Updater
+14d8191 Updater: Clear stale updates before fetching network updates [Vivekachooz]
+
+* vendor/lineage
+10b4c2b9 kernel: Don't send sources using .incbin to RBE [LuK1337]
 
