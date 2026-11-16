@@ -1,5 +1,21 @@
 [
   {
+    "datetime": 1794842645,
+    "files": [
+      {
+        "filename": "lineage-23.2-20261116-UNOFFICIAL-cepheus.zip",
+        "os_patch_level": "2026-11-01",
+        "os_sdk_level": 36,
+        "ota_property_files": "metadata:69:331,metadata.pb:468:213",
+        "sha256": "715d5fae6fbb3eb11415f8871e1e364a23e8d906903639aa1b0238ed86af7b6e",
+        "size": 1392616277,
+        "url": "https://github.com/sm8150-playground/OTA/releases/download/23.2-cepheus-715d5fae/lineage-23.2-20261116-UNOFFICIAL-cepheus.zip"
+      }
+    ],
+    "type": "unofficial",
+    "version": "23.2"
+  },
+  {
     "datetime": 1791552188,
     "files": [
       {
@@ -26,22 +42,6 @@
         "sha256": "85bb2ec9f03f8d1836669316007daa57a2751928cef3a95644c4f9694f7d25dc",
         "size": 1392031092,
         "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-cepheus-85bb2ec9/lineage-23.2-20260820-UNOFFICIAL-cepheus.zip"
-      }
-    ],
-    "type": "unofficial",
-    "version": "23.2"
-  },
-  {
-    "datetime": 1783711560,
-    "files": [
-      {
-        "filename": "lineage-23.2-20260710-UNOFFICIAL-cepheus.zip",
-        "os_patch_level": "2026-07-01",
-        "os_sdk_level": 36,
-        "ota_property_files": "metadata:69:331,metadata.pb:468:213",
-        "sha256": "8f37836f31a67e14667e2963b0935994dbe3b5bec73b14213e772bbb5204aba6",
-        "size": 1391343725,
-        "url": "https://github.com/sm8150-playground/ota/releases/download/23.2-cepheus-8f37836f/lineage-23.2-20260710-UNOFFICIAL-cepheus.zip"
       }
     ],
     "type": "unofficial",
