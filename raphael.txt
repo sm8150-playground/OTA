@@ -1,276 +1,168 @@
 ====================
-     2026-10-08    
+     2026-11-16    
 ====================
-* frameworks/base
-a5658ac3155b Fix potential OOM in PduParser by using stream skip [Pranit Rane]
-88452875cb21 Fix security vulnerabilities in PduParser.java [Aishwarya Mallampati]
-
-* lineage/crowdin
-ab74e67 config: Initial lineage-24.0 changes [Michael Bestas]
-
-* lineage/mirror
-2cba838 Updated to 08-Oct-2026 00:02 UTC [LineageOS Infra]
-b8cce6c Updated to 07-Oct-2026 18:01 UTC [LineageOS Infra]
-
-* lineage/wiki
-30cd8f38 devices: Update maintainer list of odin2portal [Bruno Martins]
+* lineage/hudson
+a349ba8 hudson: Promote r8q to 24.0 [Atakan]
 
 * packages/apps/Settings
-fa6819d034f Settings: Fix custom Private DNS hostname being overwritten [armdebug]
-
-* packages/modules/Bluetooth
-95c4f2ba7d Remove unused ext_attrs from playerapplicationsetting_cb [Brian Delwiche]
-
-* vendor/apn
-35d822d apn: Remove YT and separate Palestinian APNs from IL [dianlujitao]
-5ff92c8 apn: Make "type" optional [dianlujitao]
-6a79ec4 IE: Add Lidl Connect [dianlujitao]
+d7516846f36 Settings: Fix custom Private DNS hostname being overwritten [armdebug]
 
 ====================
-     2026-10-07    
-====================
-* lineage/mirror
-7900dcb Updated to 07-Oct-2026 00:02 UTC [LineageOS Infra]
-
-* lineage/wiki
-3ed844a0 wiki: Modify FAQ page to link to xdaforums.com [boplaid]
-
-* vendor/apn
-0d9bfd6 NP: Update Nepal apns [razorloves]
-
-====================
-     2026-10-06    
+     2026-11-15    
 ====================
 * frameworks/base
-f0316a80dc51 bootanimation: Request a high priority EGL context [Alexander Koskovich]
-
-* frameworks/opt/telephony
-a6e94555e0 RESTRICT AUTOMERGE: Fix remote DoS in decodeWapPdu (b/517376969) [Thomas Nguyen]
-
-* lineage/mirror
-44510e5 Updated to 06-Oct-2026 00:02 UTC [LineageOS Infra]
-
-====================
-     2026-10-05    
-====================
-* hardware/qcom-caf/common
-5cd5360 common: Do not enable SMMU proxy for parrot/taro even if UM_6_6 [Alexander Koskovich]
-
-====================
-     2026-10-04    
-====================
-* hardware/nxp/nfc
-1459e3f Revert "Fix Use-After-Free in NXP NFC HAL timer teardown" [LuK1337]
-
-* lineage/mirror
-fe506e2 Updated lineage-minimal to 04-Oct-2026 12:02 UTC [LineageOS Infra]
-
-====================
-     2026-10-03    
-====================
-* lineage/website
-77fc218 www: Fix typo in security patch backporting graphic [Nolen Johnson]
-
-* packages/apps/Twelve
-45dc00e Twelve: Refactor navbar fragment handling [Luca Stefani]
-ca81451 Twelve: Update play bar with new design [Luca Stefani]
-
-====================
-     2026-10-01    
-====================
-* device/qcom/sepolicy_vndr/sm8750
-490d47fb8 common: Label /sys/class/qcom-battery for everyone [Michael Bestas]
-
-* lineage/charter
-29a6394 charter: Allow emulating DT2W with single tap [nift4]
-
-* lineage/mirror
-d1bd129 Updated to 30-Sep-2026 18:01 UTC [LineageOS Infra]
-
-* packages/apps/Aperture
-f7c0a93 Automatic translation import [LineageOS Infra]
-
-* packages/apps/AudioFX
-2dbd591 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Catapult
-922ab7d Automatic translation import [LineageOS Infra]
-
-* packages/apps/DeskClock
-616807bba Automatic translation import [LineageOS Infra]
-
-* packages/apps/ExactCalculator
-153847a ExactCalculator: Add REUSE to gerrit checks [Luca Stefani]
-df45a1f Automatic translation import [LineageOS Infra]
-
-* packages/apps/Jelly
-1bb5edd Automatic translation import [LineageOS Infra]
-
-* packages/apps/LineageParts
-3912d73 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Twelve
-d602f96 Automatic translation import [LineageOS Infra]
-
-* packages/apps/Updater
-1d06090 Automatic translation import [LineageOS Infra]
-
-* packages/providers/DownloadProvider
-c9f481f1 Automatic translation import [LineageOS Infra]
-
-* packages/resources/devicesettings
-b3556d4 Automatic translation import [LineageOS Infra]
-
-* vendor/crowdin
-ee302b4 Automatic translation import [LineageOS Infra]
-
-* vendor/qcom/opensource/commonsys/fm
-89bc3d4 Automatic translation import [LineageOS Infra]
-
-====================
-     2026-09-30    
-====================
-* lineage/scripts
-be7611c sf_offsets: Add support for parsing debug.sf.high_fps_(early/late) props [AdarshGrewal]
-695ceae sf_offsets: Support legacy advanced SF offset XML [AdarshGrewal]
-
-====================
-     2026-09-29    
-====================
-* lineage/hudson
-94ee70b hudson: Drop official support for manaus [rexix01]
-
-* lineage/wiki
-902bd577 wiki: Update Apollon maintainers [Khalvat-M]
-2b785eb0 wiki: devices: Drop official support for manaus [rexix01]
-ea5b86ae wiki: Add wiki->gh mapping for nuwa maintainer [LuK1337]
-
-* packages/apps/LineageParts
-63d7666 Regenerate contributors cloud (2026-09-25) [Kevin F. Haggerty]
-
-* packages/apps/SettingsIntelligence
-9d4bbdd SettingsIntelligence: Match the Settings search bar style [Michael Bestas]
-
-* system/core
-eb2de7321 toolbox/modprobe: Add parallel option to load modules in parallel [Jaehyoung Choi]
-
-* vendor/lineage
-42143d59 release: Bump Security String to 2026-10-01 [Nolen Johnson]
-
-====================
-     2026-09-28    
-====================
-* hardware/qcom-caf/sm8450/display
-aea8d60119 composer: Skip device composition for cursor layer [LuK1337]
-
-* lineage/contributors-cloud-generator
-68b3aa8 Bump DEFAULT_CLOUD_SIZE to 2104 [Kevin F. Haggerty]
-
-* lineage/crowdin
-ad586f0 config: Move translations of hard forked apps [Michael Bestas]
-7039ee4 crowdin: Fix upload [Michael Bestas]
-
-* lineage/hudson
-6776a52 hudson: Add Galaxy Note20 [CmdCtrlDevic3]
-fa2198a Regenerate device dependency mappings [LineageOS Infra]
-
-* lineage/mirror
-65d5ac4 Updated lineage-minimal to 28-Sep-2026 06:02 UTC [LineageOS Infra]
-e0c823f Updated to 27-Sep-2026 18:01 UTC [LineageOS Infra]
-
-* lineage/wiki
-f1c057bd wiki: Add Galaxy Note20 [CmdCtrlDevic3]
-
-* packages/apps/AudioFX
-0421f49 AudioFX: Import translations from vendor/crowdin [Michael Bestas]
-
-* packages/apps/DeskClock
-e517ae8f2 DeskClock: Import translations from vendor/crowdin [Michael Bestas]
-
-* packages/apps/ExactCalculator
-4f8347b ExactCalculator: Import translations from vendor/crowdin [Michael Bestas]
-
-* packages/apps/LineageParts
-1f1ce39 LineageParts: Support leanback-only key handler targets [Bruno Martins]
-
-* packages/apps/Settings
-8d8f6486b27 fixup! Settings: Add LineageParts charging sound settings preference [Michael Bestas]
-
-* packages/apps/SettingsIntelligence
-3d62764 SettingsIntelligence: Implement edge-to-edge [Michael Bestas]
-539ceb7 SettingsIntelligence: Remove targetSdkVersion [Michael Bestas]
-
-* packages/apps/Updater
-dd48551 Updater: Make it reuse compatible again [Saalim Quadri]
-
-* vendor/crowdin
-21ffa2e Move translations of hard forked apps [Michael Bestas]
-
-* vendor/lineage
-686d8669 overlay: Update DocumentsUIOverlay [Michael Bestas]
-ac68447e config: Build Gallery2 until Glimpse can edit images [Nolen Johnson]
-
-====================
-     2026-09-27    
-====================
-* lineage/hudson
-c26f1ee spread your wings wide, crocodile [Han Sol Jin]
-
-* lineage/wiki
-896c3b36 wiki: add LG Wing (winglm) [Han Sol Jin]
-b148e9c2 wiki: add LG Velvet 5G (caymanlm) [Han Sol Jin]
-de382267 Gemfile: Ungroup test dependencies [LuK1337]
-8986a7b2 Gemfile: Update listen from 3.8.0 to 3.10.0 [LuK1337]
-6159f814 github: Bump Ruby version to 3.4 [LuK1337]
-02483344 wiki: explicitly specify local Ruby version and update script [Han Sol Jin]
-37012c18 Gemfile: remove unnecessary explicit dependencies [Han Sol Jin]
-760b6503 Gemfile: bump Jekyll to 4.4.1 and regenerate dependencies [Han Sol Jin]
-
-* packages/modules/Bluetooth
-03cb8e33c1 Bluetooth: Classify configured devices as remote controls [Bruno Martins]
-
-====================
-     2026-09-26    
-====================
-* external/chromium-webview/prebuilt/arm
-fd29391 Update Chromium Webview arm to 154.0.8037.57 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/arm64
-394b243 Update Chromium Webview arm64 to 154.0.8037.57 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86
-79bba09 Update Chromium Webview x86 to 154.0.8037.57 [Kevin F. Haggerty]
-
-* external/chromium-webview/prebuilt/x86_64
-32aceaa Update Chromium Webview x86_64 to 154.0.8037.57 [Kevin F. Haggerty]
+797e43244 Automatic translation import [LineageOS Infra]
 
 * lineage-sdk
-7cca417d lineage: res: Map all apps (ALL_APPS) key [Bruno Martins]
-57e3fad0 lineage: res: Add missing mapping for Prime Video [Bruno Martins]
+f661516 Automatic translation import [LineageOS Infra]
 
-* lineage/hudson
-1fd9d41 Regenerate device dependency mappings [LineageOS Infra]
+* lineage/mirror
+61c542b Updated to 15-Nov-2026 18:02 UTC [LineageOS Infra]
+
+* lineage/wiki
+f7633a6 wiki: Add myself as maintainer to a fleet of devices [Nick Reuter]
+
+* packages/apps/Aperture
+a0b16a6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/AudioFX
+d66c5df Automatic translation import [LineageOS Infra]
+
+* packages/apps/Camelot
+41ac69b Automatic translation import [LineageOS Infra]
+
+* packages/apps/Catapult
+acd8db8 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Contacts
+cbaeec7 Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+b02ff1e Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+8fa7a1c Automatic translation import [LineageOS Infra]
+
+* packages/apps/DocumentsUI
+668e1c6 Automatic translation import [LineageOS Infra]
+
+* packages/apps/ExactCalculator
+757bbf1 Automatic translation import [LineageOS Infra]
+
+* packages/apps/FMRadio
+043921b Automatic translation import [LineageOS Infra]
+
+* packages/apps/FlipFlap
+f316ade Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+c16e364 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+4af271b Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+4935945 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Messaging
+21c45dc Automatic translation import [LineageOS Infra]
+
+* packages/apps/Profiles
+d0d2e04 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+510144b Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+e1b8cd2dde2 Automatic translation import [LineageOS Infra]
+
+* packages/apps/SetupWizard
+6dbc721 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Twelve
+7dd0d93 Automatic translation import [LineageOS Infra]
 
 * packages/apps/Updater
-14d8191 Updater: Clear stale updates before fetching network updates [Vivekachooz]
+4dbea17 Automatic translation import [LineageOS Infra]
 
-* vendor/lineage
-10b4c2b9 kernel: Don't send sources using .incbin to RBE [LuK1337]
+* packages/inputmethods/LatinIME
+d9ba778 Automatic translation import [LineageOS Infra]
+
+* packages/providers/DownloadProvider
+02647ba Automatic translation import [LineageOS Infra]
+
+* packages/resources/devicesettings
+e1a81f9 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+7e25c38 Automatic translation import [LineageOS Infra]
+
+* vendor/qcom/opensource/commonsys/fm
+540325a Automatic translation import [LineageOS Infra]
 
 ====================
-     2026-09-25    
+     2026-11-13    
 ====================
-* build/make
-e5aaa62172 build: Exclude already overriden AOSP apps from LineageOS builds [AnierinB]
+* external/chromium-webview/prebuilt/arm
+1c11dff Update Chromium Webview arm to 157.0.8103.78 [Kevin F. Haggerty]
 
+* external/chromium-webview/prebuilt/arm64
+c6efd19 Update Chromium Webview arm64 to 157.0.8103.78 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86
+35395eb Update Chromium Webview x86 to 157.0.8103.78 [Kevin F. Haggerty]
+
+* external/chromium-webview/prebuilt/x86_64
+a63f54a Update Chromium Webview x86_64 to 157.0.8103.78 [Kevin F. Haggerty]
+
+====================
+     2026-11-12    
+====================
 * external/chromium-webview/patches
-c90965b Update Chromium Webview to 154.0.8037.57 [Kevin F. Haggerty]
+544b12e Update Chromium Webview to 157.0.8103.78 [Kevin F. Haggerty]
+
+* hardware/nxp/nfc
+a979882 Fix infinite loop and logcat spam in NXP NFC HAL teardown [Kyle Hsiao]
 
 * lineage/scripts
-e81615b build-webview: Update default webview to 154.0.8037.57 [Kevin F. Haggerty]
+c2af5e2 build-webview: Update default webview to 157.0.8103.78 [Kevin F. Haggerty]
 
-* packages/apps/Etar
-3cda65da Etar: Downgrade target SDK to 36 [LuK1337]
-8173ec80 Etar: ./gradlew generateBp [LuK1337]
-5729ddae Merge tag 'v1.0.57' of https://github.com/Etar-Group/Etar-Calendar into lineage-23.2 [LuK1337]
+* vendor/apn
+2842825 fixup! CN: Add IMS APNs and dual-stack support for CT [anrui2032]
+
+* vendor/lineage
+1a4ed79 release: Bump Security String to 2026-11-01 [Nolen Johnson]
+
+====================
+     2026-11-10    
+====================
+* android
+84e40f4 manifest: Forks for 2026-11 ASB [Nolen Johnson]
+
+* packages/apps/CellBroadcastReceiver
+4eb2645 [25Q2 Backport] Deflag CBR feature and add CELL_BROADCAST_PRIVILEGE_ACCESS [Martin Olsson]
+
+* packages/modules/CellBroadcastService
+6659dd3 [25Q2 Backport] Add dummy metric error constants to CellBroadcastMetrics [Martin Olsson]
+
+* packages/providers/TelephonyProvider
+1564e1b Add checkSelection validation to updateInternal and deleteInternal [Aishwarya Mallampati]
+
+====================
+     2026-11-07    
+====================
+* device/lineage/sepolicy
+96a7247 sepolicy: system_ext: Allow setupwraith_app some things [Nolen Johnson]
+
+====================
+     2026-11-04    
+====================
+* hardware/broadcom/libbt
+0705545 bt: Import firmware [Bruno Martins]
+
+* hardware/broadcom/wlan
+9d0b2df wlan: Import firmware [Bruno Martins]
+
+* lineage/charter
+9ee719e Deepen guidance on AI usage [Nolen Johnson]
 
